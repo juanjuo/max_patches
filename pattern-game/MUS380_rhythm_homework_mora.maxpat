@@ -10,9 +10,20 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1096.0, 693.0 ],
+		"rect" : [ 34.0, 77.0, 1468.0, 713.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-101",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 58.0, 23.0, 150.0, 20.0 ],
+					"text" : "12/02/2024 11:00am"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-204",
 					"maxclass" : "button",
@@ -32,7 +43,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "bang", "bang", "int" ],
 					"patching_rect" : [ 2241.0, 75.0, 40.0, 22.0 ],
-					"text" : "uzi 7"
+					"text" : "uzi 8"
 				}
 
 			}
@@ -56,7 +67,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2401.0, 75.0, 29.5, 22.0 ],
-					"text" : "0"
+					"text" : "1"
 				}
 
 			}
@@ -214,7 +225,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2487.0, 49.0, 150.0, 87.0 ],
+					"patching_rect" : [ 2487.0, 49.0, 150.0, 89.0 ],
 					"text" : "\"Plain hunt\":\n\n1) Swap each pair \n2) Swap only internal pairs\n\nAlternate"
 				}
 
@@ -251,8 +262,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2178.0, 325.0, 154.0, 35.0 ],
-					"text" : "2 1 4 3"
+					"patching_rect" : [ 2178.0, 325.0, 154.0, 36.0 ],
+					"text" : "1 2 3 4"
 				}
 
 			}
@@ -276,7 +287,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2241.0, 209.0, 65.0, 22.0 ],
-					"text" : "2 1 4 3"
+					"text" : "1 2 3 4"
 				}
 
 			}
@@ -379,7 +390,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 2198.0, 1579.0, 50.0, 35.0 ],
+					"patching_rect" : [ 2198.0, 1579.0, 50.0, 36.0 ],
 					"text" : "1 3 4 1 1 1"
 				}
 
@@ -823,7 +834,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1354.0, 1476.0, 150.0, 100.0 ],
+					"patching_rect" : [ 1354.0, 1476.0, 150.0, 103.0 ],
 					"text" : "If correct pattern was inputed, then go to next section, during section 4, 8 and 12, if 3 patterns where inputed correctly in a row, then go on to the next section."
 				}
 
@@ -948,7 +959,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2300.0, 1291.0, 150.0, 60.0 ],
+					"patching_rect" : [ 2300.0, 1291.0, 150.0, 62.0 ],
 					"text" : "Maybe try to make some of the functions more modular? decoupled from each other"
 				}
 
@@ -1289,7 +1300,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1240.5, 11.05554324388504, 161.0, 114.0 ],
+					"patching_rect" : [ 1240.5, 11.05554324388504, 161.0, 117.0 ],
 					"text" : "Look for more Change Ringing Patterns, maybe generate them all at the begenning of the patch and then put them in a call to be used during the piece rather than generating one each level?"
 				}
 
@@ -1301,7 +1312,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 70.0, 773.0, 150.0, 315.0 ],
+					"patching_rect" : [ 70.0, 773.0, 150.0, 324.0 ],
 					"text" : "LEVEL 1 - 3\n\n4 Pattern\n\nLEVEL 4\n\nlast 3 patterns\n\nLEVEL 5 - 7\n\n5 Pattern\n\nLEVEL 8 \n\nlast 3 Patterns\n\nLEVEL 9-11\n\n6 pattern\n\nLEVEL 12\n\nlast 3 patterns"
 				}
 
@@ -1313,7 +1324,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 79.0, 556.0, 152.0, 100.0 ],
+					"patching_rect" : [ 79.0, 556.0, 152.0, 103.0 ],
 					"text" : "Some visuals to represent where along the piece you are would be cool, but a performer wouldn't be required to have the visuals if they didn't want to"
 				}
 
@@ -1325,7 +1336,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 79.0, 332.0, 151.0, 141.0 ],
+					"patching_rect" : [ 79.0, 332.0, 151.0, 144.0 ],
 					"text" : "12 levels - 1 level for each key in the circle of 5ths, if you make it through the circle you win. each key will have a different synth generating sounds for it, and all the generative music will be controlled partially by the performance. "
 				}
 
@@ -1337,7 +1348,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 347.814804494380951, 380.246943950653076, 161.0, 127.0 ],
+					"patching_rect" : [ 347.814804494380951, 380.246943950653076, 161.0, 131.0 ],
 					"text" : "It would be cool to have the patch listen to the performer in different layers, not only on what the are playing to continue with the game, but also how loud or soft they're playing, how fast or slow they're playing, and for it to respond accordingly"
 				}
 
@@ -1420,7 +1431,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1879.0, 246.0, 153.0, 234.0 ],
+					"patching_rect" : [ 1879.0, 246.0, 153.0, 241.0 ],
 					"text" : "DRUMSET PIECE\n\n- Computer generates a pattern \n\n- player tries to immitate\n\n- computer gives feedback\n+ play something when completed the phrase\n+play something when \n\n- player tries again\n\n- process continues untill drummer gets pattern right \n"
 				}
 
@@ -1563,7 +1574,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2157.0, 877.0, 102.0, 24.0 ],
+					"patching_rect" : [ 2157.0, 877.0, 102.0, 25.0 ],
 					"text" : "string length"
 				}
 
@@ -2029,7 +2040,7 @@
 
 							}
  ],
-						"originid" : "pat-142"
+						"originid" : "pat-8"
 					}
 ,
 					"patching_rect" : [ 1204.93836784362793, 537.037079930305481, 53.0, 22.0 ],
@@ -2286,7 +2297,7 @@
 
 							}
  ],
-						"originid" : "pat-144"
+						"originid" : "pat-10"
 					}
 ,
 					"patching_rect" : [ 1345.679119825363159, 537.037079930305481, 59.0, 22.0 ],
@@ -2543,7 +2554,7 @@
 
 							}
  ],
-						"originid" : "pat-146"
+						"originid" : "pat-12"
 					}
 ,
 					"patching_rect" : [ 1487.654439806938171, 537.037079930305481, 59.0, 22.0 ],
@@ -3010,7 +3021,7 @@
 
 							}
  ],
-						"originid" : "pat-148"
+						"originid" : "pat-14"
 					}
 ,
 					"patching_rect" : [ 1639.506303787231445, 537.037079930305481, 59.0, 22.0 ],
@@ -3253,7 +3264,7 @@
 
 							}
  ],
-						"originid" : "pat-150"
+						"originid" : "pat-16"
 					}
 ,
 					"patching_rect" : [ 589.0, 932.0, 53.0, 22.0 ],
@@ -3738,7 +3749,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 347.814804494380951, 149.0, 150.0, 221.0 ],
+					"patching_rect" : [ 347.814804494380951, 149.0, 150.0, 227.0 ],
 					"text" : "A black box component of you can ask the computer to give you both, the individual cels that you're going to use and also the individual sections of a bigger pattern. USING THE SAME ALGORITHM\n\nit can be so that it first gives you a guess for the individual patterns and once you have all the pattern, then another guess to how to put these patterns together!!!"
 				}
 
@@ -3750,7 +3761,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 558.518500208854675, 375.55554324388504, 153.0, 127.0 ],
+					"patching_rect" : [ 558.518500208854675, 375.55554324388504, 153.0, 131.0 ],
 					"text" : "Player imput = contact mics, on a time-based system, the imput from the contacts mics will be saved, and then the computer can check the order the imput was inserted with the computer-generated guess"
 				}
 
@@ -3762,7 +3773,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 558.518500208854675, 61.904755115509033, 154.0, 288.0 ],
+					"patching_rect" : [ 558.518500208854675, 61.904755115509033, 154.0, 296.0 ],
 					"text" : "Guessing game\n\n1) Computer creates a pattern that the player will need to guess\n\n2) every time a pattern is insserted the computer will be able to tell you 1. what TYPES are right, and what POSITIONS are right\n\n3) when a TYPE is right, computer does something, when a POSITION is right, computer does something\n\n4) when both TYPE and POSITION are right, it unlocks the end and computer does something"
 				}
 
@@ -3774,7 +3785,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 49.999994516372681, 166.5, 179.0, 74.0 ],
+					"patching_rect" : [ 49.999994516372681, 166.5, 179.0, 75.0 ],
 					"text" : "for drums, using the triggers, somehow insertign that data into MAX and building a model with it. maybe to build melodies? or other structures?"
 				}
 
@@ -3787,7 +3798,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 49.999994516372681, 61.904755115509033, 195.0, 78.0 ],
+					"patching_rect" : [ 49.999994516372681, 61.904755115509033, 195.0, 80.0 ],
 					"text" : "MUS380\n10/26/2024\nJuan Diego Mora\nMIDTERM"
 				}
 
@@ -4749,13 +4760,6 @@
 					"destination" : [ "obj-78", 3 ],
 					"order" : 1,
 					"source" : [ "obj-191", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-109", 0 ],
-					"source" : [ "obj-194", 1 ]
 				}
 
 			}
@@ -5925,7 +5929,7 @@
 
 			}
  ],
-		"originid" : "pat-106",
+		"originid" : "pat-6",
 		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
