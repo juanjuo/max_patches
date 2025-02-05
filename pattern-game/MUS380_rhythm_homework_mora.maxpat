@@ -10,18 +10,128 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 35.0, 86.0, 1065.0, 704.0 ],
+		"rect" : [ 34.0, 87.0, 1372.0, 694.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
-					"fontsize" : 30.0,
-					"id" : "obj-109",
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 910.0, 182.0, 41.0, 22.0 ],
+					"text" : "zl.mth"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-64",
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 256.688309669494629, 622.922072410583496, 336.0, 41.0 ],
+					"patching_rect" : [ 357.142873108386993, 525.142880618572235, 406.857161045074463, 60.0 ],
+					"text" : "This version doesn't focuses heavily on the synth part but on the controller side. I would like to keep thinking about what are some good musical choices to go along the logic and pasing of the piece, but for now I'm just sending all note-generating commands to a midi keyboard"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 645.0, 713.084106624126434, 87.0, 22.0 ],
+					"text" : "loadmess start"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 36.0,
+					"id" : "obj-28",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2931.168803215026855, 617.0, 131.168829917907715, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 743.318708658218384, 548.037079930305481, 198.701296806335449, 41.0 ],
+					"presentation_rect" : [ 1049.0, 540.259735107421875, 151.0, 47.0 ],
+					"text" : "RESET"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 806.122441291809082, 1122.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 18.0,
+					"id" : "obj-14",
+					"linecount" : 19,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 3555.555496215820312, 569.166653096675873, 234.0, 389.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 7,
+					"presentation_rect" : [ 38.679484963417053, 287.585376262664795, 989.0, 147.0 ],
+					"text" : "These patterns come always in this form, and in order to play through all sections you must play the pattern correctly. \n\nYou can play patterns in any rhythm, as long as they follow the numbers correctly. In section 4, 8, and 12 you will need to play the last 3 patterns you played. \n\nAll patterns reset after you input 10 numbers. So make sure to always play groups of 10 numbers to reset a pattern to play it again"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 30.0,
+					"id" : "obj-13",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 2983.0, 559.0, 184.0, 40.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 38.679484963417053, 247.363635063171387, 188.0, 40.0 ],
+					"text" : "1213214321"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 24.0,
+					"id" : "obj-8",
+					"linecount" : 14,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 3504.166833758354187, 138.416783094406128, 292.0, 382.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 14,
+					"presentation_rect" : [ 1049.0, 37.307686805725098, 292.0, 382.0 ],
+					"text" : "SECTIONS\n\n1. Pattern 1\n2. Pattern 2\n3. Pattern 3\n4. Pattern 1 - 2 - 3\n5. \"         \" 4\n6. \"         \" 5\n7. \"         \" 6\n8. \"         \" 4 - 5 - 6\n9. \"         \" 7\n10. \"       \" 8\n11. \"       \" 9\n12. \"       \" 7 - 8 - 9"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 30.0,
+					"id" : "obj-109",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 3359.0, 369.623373031616211, 110.0, 74.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 699.999993324279785, 590.909085273742676, 200.0, 40.0 ],
 					"text" : "FLOOR TOM"
 				}
 
@@ -33,9 +143,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 241.688309669494629, 607.922072410583496, 336.0, 41.0 ],
+					"patching_rect" : [ 3168.038930892944336, 321.0, 110.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 602.597396850585938, 429.870125770568848, 76.62337589263916, 41.0 ],
+					"presentation_rect" : [ 559.740254402160645, 472.727268218994141, 78.0, 40.0 ],
 					"text" : "TOM"
 				}
 
@@ -47,9 +157,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 226.688309669494629, 592.922072410583496, 336.0, 41.0 ],
+					"patching_rect" : [ 2972.72724437713623, 321.0, 110.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 391.455075979232788, 429.870125770568848, 76.62337589263916, 41.0 ],
+					"presentation_rect" : [ 348.051944732666016, 472.727268218994141, 78.0, 40.0 ],
 					"text" : "TOM"
 				}
 
@@ -61,9 +171,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 211.688309669494629, 577.922072410583496, 336.0, 41.0 ],
+					"patching_rect" : [ 2777.364211440086365, 392.207788467407227, 115.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 174.025972366333008, 557.537079930305481, 120.0, 41.0 ],
+					"presentation_rect" : [ 131.168829917907715, 601.29869556427002, 121.0, 40.0 ],
 					"text" : "SNARE"
 				}
 
@@ -75,25 +185,26 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 888.311679840087891, 181.818180084228516, 350.0, 41.0 ],
+					"patching_rect" : [ 2728.571402549743652, 210.571426391601562, 350.0, 40.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 37.179484963417053, 136.363635063171387, 191.0, 41.0 ],
+					"presentation_rect" : [ 37.179484963417053, 136.363635063171387, 191.0, 40.0 ],
 					"text" : "For Drumset"
 				}
 
 			}
 , 			{
 				"box" : 				{
+					"fontsize" : 18.0,
 					"id" : "obj-83",
-					"linecount" : 3,
+					"linecount" : 10,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1355.844142913818359, 146.75324535369873, 150.0, 48.0 ],
+					"patching_rect" : [ 3790.277958512306213, 131.472338318824768, 232.0, 208.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 1228.571416854858398, 222.077919960021973, 150.0, 48.0 ],
-					"text" : "Each of the triggers should be connected to the drums in order, "
+					"presentation_rect" : [ 37.179484963417053, 178.363635063171387, 984.0, 67.0 ],
+					"text" : "Each of the triggers should be connected to the drums in order. for each section, the computer will generate combination of numbers, and you should guess what the pattern is in order to move forwards in the piece. Patterns will always have 10 numbers, for example:"
 				}
 
 			}
@@ -328,7 +439,7 @@
 
 							}
  ],
-						"originid" : "pat-57"
+						"originid" : "pat-8"
 					}
 ,
 					"patching_rect" : [ 2719.480493545532227, 372.727269172668457, 53.0, 22.0 ],
@@ -559,7 +670,7 @@
 
 							}
  ],
-						"originid" : "pat-59"
+						"originid" : "pat-10"
 					}
 ,
 					"patching_rect" : [ 2910.389582633972168, 312.98701000213623, 59.0, 22.0 ],
@@ -790,7 +901,7 @@
 
 							}
  ],
-						"originid" : "pat-61"
+						"originid" : "pat-12"
 					}
 ,
 					"patching_rect" : [ 3098.701269149780273, 309.090906143188477, 59.0, 22.0 ],
@@ -1021,7 +1132,7 @@
 
 							}
  ],
-						"originid" : "pat-63"
+						"originid" : "pat-14"
 					}
 ,
 					"patching_rect" : [ 3284.415553092956543, 376.623373031616211, 59.0, 22.0 ],
@@ -1041,9 +1152,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3344.15581226348877, 455.844151496887207, 68.0, 89.0 ],
+					"patching_rect" : [ 3344.15581226348877, 455.844151496887207, 68.0, 87.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 808.169357061386108, 640.259734153747559, 69.0, 89.0 ],
+					"presentation_rect" : [ 764.935057640075684, 683.116876602172852, 69.0, 87.0 ],
 					"text" : "4"
 				}
 
@@ -1056,9 +1167,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3161.038930892944336, 392.207788467407227, 68.0, 89.0 ],
+					"patching_rect" : [ 3161.038930892944336, 392.207788467407227, 68.0, 87.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 613.364164113998413, 514.285709381103516, 69.0, 89.0 ],
+					"presentation_rect" : [ 570.129864692687988, 557.142851829528809, 69.0, 87.0 ],
 					"text" : "3"
 				}
 
@@ -1071,9 +1182,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2972.72724437713623, 392.207788467407227, 68.0, 89.0 ],
+					"patching_rect" : [ 2972.72724437713623, 392.207788467407227, 68.0, 87.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 399.078451871871948, 514.285709381103516, 69.0, 89.0 ],
+					"presentation_rect" : [ 357.142853736877441, 557.142851829528809, 69.0, 87.0 ],
 					"text" : "2"
 				}
 
@@ -1086,9 +1197,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2779.220752716064453, 458.441554069519043, 68.0, 89.0 ],
+					"patching_rect" : [ 2779.220752716064453, 458.441554069519043, 68.0, 87.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 202.974557638168335, 640.259734153747559, 69.0, 89.0 ],
+					"presentation_rect" : [ 159.74025821685791, 683.116876602172852, 69.0, 87.0 ],
 					"text" : "1"
 				}
 
@@ -1103,7 +1214,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 3284.415553092956543, 414.285710334777832, 169.767435789108276, 169.767435789108276 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 749.7277991771698, 599.999994277954102, 169.767435789108276, 169.767435789108276 ]
+					"presentation_rect" : [ 706.493499755859375, 644.155838012695312, 169.767435789108276, 169.767435789108276 ]
 				}
 
 			}
@@ -1117,7 +1228,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 3098.701269149780273, 350.649347305297852, 169.767435789108276, 169.767435789108276 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 551.026502370834351, 474.025969505310059, 169.767435789108276, 169.767435789108276 ]
+					"presentation_rect" : [ 507.792202949523926, 518.18181324005127, 169.767435789108276, 169.767435789108276 ]
 				}
 
 			}
@@ -1131,7 +1242,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2910.389582633972168, 350.649347305297852, 169.767435789108276, 169.767435789108276 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 339.338192701339722, 474.025969505310059, 169.767435789108276, 169.767435789108276 ]
+					"presentation_rect" : [ 296.103893280029297, 518.18181324005127, 169.767435789108276, 169.767435789108276 ]
 				}
 
 			}
@@ -1145,7 +1256,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 2719.480493545532227, 418.181814193725586, 169.767435789108276, 169.767435789108276 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 143.234298467636108, 599.999994277954102, 169.767435789108276, 169.767435789108276 ]
+					"presentation_rect" : [ 99.999999046325684, 644.155838012695312, 169.767435789108276, 169.767435789108276 ]
 				}
 
 			}
@@ -1156,9 +1267,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3284.415553092956543, 179.22077751159668, 69.767439365386963, 34.0 ],
+					"patching_rect" : [ 3284.415553092956543, 179.22077751159668, 69.767439365386963, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 606.410220265388489, 92.307686805725098, 59.0, 34.0 ],
+					"presentation_rect" : [ 606.410220265388489, 92.307686805725098, 59.0, 33.0 ],
 					"text" : "v0.1"
 				}
 
@@ -1170,9 +1281,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2728.571402549743652, 124.675323486328125, 546.511608362197876, 89.0 ],
+					"patching_rect" : [ 2728.571402549743652, 124.675323486328125, 557.0, 87.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 37.179484963417053, 37.307686805725098, 559.0, 89.0 ],
+					"presentation_rect" : [ 37.179484963417053, 37.307686805725098, 559.0, 87.0 ],
 					"text" : "Black Box Music "
 				}
 
@@ -1222,7 +1333,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 757.0, 1337.0, 24.0, 24.0 ]
+					"patching_rect" : [ 975.510194778442383, 1226.964274108409882, 24.0, 24.0 ]
 				}
 
 			}
@@ -1232,7 +1343,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 826.0, 1346.0, 82.0, 20.0 ],
+					"patching_rect" : [ 1044.89794921875, 1235.127539336681366, 82.0, 20.0 ],
 					"text" : "PATTERNS"
 				}
 
@@ -1256,7 +1367,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 733.928564429283142, 1216.964274108409882, 190.0, 35.0 ],
+					"patching_rect" : [ 733.928564429283142, 1216.964274108409882, 190.0, 34.0 ],
 					"text" : "the music patch"
 				}
 
@@ -1279,7 +1390,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 409.0, 89.0, 1000.0, 659.0 ],
+						"rect" : [ 184.0, 87.0, 1000.0, 594.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"boxes" : [ 							{
 								"box" : 								{
@@ -1374,7 +1485,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 942.553184747695923, 434.042550086975098, 50.0, 22.0 ],
-									"text" : "71"
+									"text" : "63"
 								}
 
 							}
@@ -1386,7 +1497,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 942.537279725074768, 297.761183381080627, 50.0, 22.0 ],
-									"text" : "91"
+									"text" : "87"
 								}
 
 							}
@@ -1398,7 +1509,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1042.553184032440186, 297.87233829498291, 50.0, 22.0 ],
-									"text" : "85"
+									"text" : "91"
 								}
 
 							}
@@ -1410,7 +1521,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1163.829778909683228, 297.87233829498291, 50.0, 22.0 ],
-									"text" : "85"
+									"text" : "95"
 								}
 
 							}
@@ -1434,7 +1545,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 680.851058959960938, 804.255313396453857, 50.0, 22.0 ],
-									"text" : "59"
+									"text" : "49"
 								}
 
 							}
@@ -1446,7 +1557,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 602.127655267715454, 804.255313396453857, 50.0, 22.0 ],
-									"text" : "49"
+									"text" : "57"
 								}
 
 							}
@@ -1458,7 +1569,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 525.531911134719849, 804.255313396453857, 50.0, 22.0 ],
-									"text" : "55"
+									"text" : "49"
 								}
 
 							}
@@ -1470,7 +1581,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 455.319145679473877, 804.255313396453857, 50.0, 22.0 ],
-									"text" : "59"
+									"text" : "49"
 								}
 
 							}
@@ -1482,7 +1593,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 385.106380224227905, 804.255313396453857, 50.0, 22.0 ],
-									"text" : "57"
+									"text" : "55"
 								}
 
 							}
@@ -1494,7 +1605,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 317.021274328231812, 804.255313396453857, 50.0, 22.0 ],
-									"text" : "51"
+									"text" : "59"
 								}
 
 							}
@@ -1506,7 +1617,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 246.80850887298584, 804.255313396453857, 50.0, 22.0 ],
-									"text" : "57"
+									"text" : "59"
 								}
 
 							}
@@ -1518,7 +1629,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 172.340424299240112, 804.255313396453857, 50.0, 22.0 ],
-									"text" : "55"
+									"text" : "49"
 								}
 
 							}
@@ -1542,7 +1653,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 329.787231683731079, 297.87233829498291, 50.0, 22.0 ],
-									"text" : "33"
+									"text" : "27"
 								}
 
 							}
@@ -1554,7 +1665,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 204.255317687988281, 297.87233829498291, 50.0, 22.0 ],
-									"text" : "45"
+									"text" : "47"
 								}
 
 							}
@@ -1566,7 +1677,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 74.468084573745728, 297.87233829498291, 62.0, 22.0 ],
-									"text" : "39"
+									"text" : "45"
 								}
 
 							}
@@ -1864,8 +1975,8 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 510.638294219970703, 476.595741271972656, 159.0, 36.0 ],
-									"text" : "51 57 57 57 55 57 51 57 59 55 49 59 55 55 49 49 59 49"
+									"patching_rect" : [ 510.638294219970703, 476.595741271972656, 159.0, 35.0 ],
+									"text" : "57 59 51 57 49 59 59 55 49 49 57 49 55 51 55 59 51 49"
 								}
 
 							}
@@ -1925,7 +2036,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 497.107615113258362, 382.835807204246521, 50.0, 22.0 ],
-									"text" : "55"
+									"text" : "57"
 								}
 
 							}
@@ -1948,7 +2059,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 420.895507335662842, 151.326802134513855, 75.0, 34.0 ],
+									"patching_rect" : [ 420.895507335662842, 151.326802134513855, 75.0, 33.0 ],
 									"text" : "major pentatonic"
 								}
 
@@ -3255,7 +3366,7 @@
 
 							}
  ],
-						"originid" : "pat-8"
+						"originid" : "pat-16"
 					}
 ,
 					"patching_rect" : [ 799.107135236263275, 1260.714273691177368, 47.0, 22.0 ],
@@ -3274,7 +3385,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2222.80699634552002, 913.0, 150.0, 75.0 ],
+					"patching_rect" : [ 2222.80699634552002, 913.0, 150.0, 74.0 ],
 					"text" : "I could change the length of the inputted string depending on the level, I'm going with 10 for all the levels for this version"
 				}
 
@@ -3285,7 +3396,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 625.490215837955475, 731.372572124004364, 94.117650032043457, 20.0 ],
+					"patching_rect" : [ 620.560742855072021, 677.57008820772171, 94.117650032043457, 20.0 ],
 					"text" : "activate triggers"
 				}
 
@@ -3297,8 +3408,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 357.089539468288422, 225.373126268386841, 411.0, 227.0 ],
-					"text" : "In this iteration of the piece, I was thinking to use drums with contact mics as input, and depending on how you play these drums, certain parts of the patch will unlock. In this version of the piece, there's a clear through line that could be followed, and a clear beginning and end. But thinking about the black box music concept brings other ideas into how this sort of performance could be done differently and I'd like to keep working with this concept in the future. For example, I would love to be able to implement it using objects like Bonk~ or Sigmund~ to make it compatible with other instruments, and to find a finer range of control between the performer and the patch, so that the patch not only respondes to the specific input, but how that input is being played (loud or soft, fast or slow etc). I would also like to load the patch on some sort of embedded system (maybe like one of those Teensy or Daisy microprocessors, or a Raspberry pi Zero 2W which recently got added to MAX's RNBO library, and it's much cheaper) so that there's a real element of disconection between the performer and the computer."
+					"patching_rect" : [ 357.089539468288422, 225.373126268386841, 411.0, 221.0 ],
+					"text" : "In this iteration of the piece, I was thinking to use drums with contact mics as input, and depending on how you play these drums, certain parts of the patch will unlock. In this version of the piece, there's a clear through line that could be followed, and a clear beginning and end. But thinking about the black box music concept brings other ideas into how this sort of performance could be done differently and I'd like to keep working with this concept in the future. For example, I would love to be able to implement it using objects like Bonk~ or Sigmund~ to make it compatible with other instruments, and to find a finer range of control between the performer and the patch, so that the patch not only responds to the specific input, but how that input is being played (loud or soft, fast or slow etc). I would also like to load the patch on some sort of embedded system (maybe like one of those Teensy or Daisy microprocessors, or a Raspberry pi Zero 2W which recently got added to MAX's RNBO library, and it's much cheaper) so that there's a real element of disconection between the performer and the computer."
 				}
 
 			}
@@ -3309,7 +3420,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 358.955211043357849, 156.0, 400.746254324913025, 62.0 ],
+					"patching_rect" : [ 358.955211043357849, 156.0, 400.746254324913025, 60.0 ],
 					"text" : "A black box accompanist, similar to the way Interspicies Smalltalk by\nDavid Behman works. This patch is a synth that is being controlled by a performer in very specific ways. and most of the interactions between the performer and the patch have been hidden to the performer. "
 				}
 
@@ -3321,7 +3432,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 314.285711288452148, 1392.5, 153.0, 89.0 ],
+					"patching_rect" : [ 314.285711288452148, 1392.5, 153.0, 87.0 ],
 					"text" : "These receive all the inputs, if they're correct. These can be used to give feedback to the player for them to know if they're playing the right thing"
 				}
 
@@ -3455,7 +3566,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 310.389607429504395, 1296.39610481262207, 150.0, 48.0 ],
+					"patching_rect" : [ 310.389607429504395, 1296.39610481262207, 150.0, 47.0 ],
 					"text" : "Means that the check-in has been completed and you can move on"
 				}
 
@@ -3479,7 +3590,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 310.389607429504395, 1195.097404479980469, 150.0, 62.0 ],
+					"patching_rect" : [ 310.389607429504395, 1195.097404479980469, 150.0, 60.0 ],
 					"text" : "Means that the required number of inputs for the check-in has been completed (three patterns)"
 				}
 
@@ -3525,7 +3636,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 310.389607429504395, 1105.487015724182129, 150.0, 34.0 ],
+					"patching_rect" : [ 310.389607429504395, 1105.487015724182129, 150.0, 33.0 ],
 					"text" : "Means you have reached levels 4, 8 and 12"
 				}
 
@@ -3606,7 +3717,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 310.389607429504395, 979.512990951538086, 150.0, 34.0 ],
+					"patching_rect" : [ 310.389607429504395, 979.512990951538086, 150.0, 33.0 ],
 					"text" : "Keeps track of what level you're in"
 				}
 
@@ -3630,7 +3741,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 310.389607429504395, 873.019485473632812, 151.0, 62.0 ],
+					"patching_rect" : [ 310.389607429504395, 873.019485473632812, 151.0, 60.0 ],
 					"text" : "Means that the pattern inputed is the correct pattern, and you can go to the next Level"
 				}
 
@@ -3665,7 +3776,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 310.389607429504395, 752.240265846252441, 150.0, 75.0 ],
+					"patching_rect" : [ 310.389607429504395, 752.240265846252441, 150.0, 74.0 ],
 					"text" : "Means that the required number of inputs has been reached, and it's ready to start counting inputs again"
 				}
 
@@ -3701,7 +3812,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 823.0, 560.037079930305481, 151.0, 22.0 ],
-					"text" : "2 3 4 4 1 4 1 2 4 1"
+					"text" : "1 1 2 1 2 3 1 2 3 4"
 				}
 
 			}
@@ -3722,7 +3833,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 306.0, 150.0, 1000.0, 659.0 ],
+						"rect" : [ 246.0, 87.0, 1000.0, 594.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
 						"boxes" : [ 							{
 								"box" : 								{
@@ -3744,7 +3855,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 730.0, 173.0, 154.0, 158.0 ],
+									"patching_rect" : [ 730.0, 173.0, 157.0, 154.0 ],
 									"text" : "I modified it so that it not only displays accumulative results up to 4 starting at 1, but also starting at 2, 3, and 4, and backwards. 8 different patterns in total. \n\nTechnically it could be any other pattern! I'm going with this for this versino of the piece"
 								}
 
@@ -3756,7 +3867,7 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 543.0, 20.0, 150.0, 48.0 ],
+									"patching_rect" : [ 543.0, 20.0, 150.0, 47.0 ],
 									"text" : "Using the Tom Johnson Self-Similar melodies patch from class"
 								}
 
@@ -4527,7 +4638,7 @@
 
 											}
  ],
-										"originid" : "pat-12"
+										"originid" : "pat-20"
 									}
 ,
 									"patching_rect" : [ 302.0, 536.0, 75.0, 22.0 ],
@@ -5094,7 +5205,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 89.0, 409.0, 115.0, 22.0 ],
-									"text" : "1 2 3 3 4 3 4 1 3 4"
+									"text" : "4 4 1 4 1 2 4 1 2 3"
 								}
 
 							}
@@ -5516,10 +5627,10 @@
 
 							}
  ],
-						"originid" : "pat-10"
+						"originid" : "pat-18"
 					}
 ,
-					"patching_rect" : [ 743.607135236263275, 1380.0, 158.0, 22.0 ],
+					"patching_rect" : [ 962.244888782501221, 1269.821416556835175, 158.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"globalpatchername" : ""
 					}
@@ -5535,7 +5646,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 58.0, 23.0, 150.0, 20.0 ],
-					"text" : "12/014/2024 10:30pm"
+					"text" : "12/16/2024 11:03am"
 				}
 
 			}
@@ -5621,7 +5732,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2198.0, 1579.0, 118.0, 22.0 ],
-					"text" : "2 3 4 4 1 4 1 2 4 1"
+					"text" : "1 1 2 1 2 3 1 2 3 4"
 				}
 
 			}
@@ -5663,18 +5774,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-259",
-					"maxclass" : "number",
-					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 2133.0, 953.0, 50.0, 22.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-257",
 					"maxclass" : "number",
 					"numinlets" : 1,
@@ -5698,13 +5797,16 @@
 			}
 , 			{
 				"box" : 				{
+					"bgcolor" : [ 0.427450980392157, 0.003921568627451, 0.003921568627451, 1.0 ],
 					"id" : "obj-253",
 					"maxclass" : "button",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1930.5, 569.166653096675873, 111.052639007568359, 111.052639007568359 ]
+					"patching_rect" : [ 1930.5, 569.166653096675873, 111.052639007568359, 111.052639007568359 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1018.181808471679688, 590.909085273742676, 203.883115768432617, 203.883115768432617 ]
 				}
 
 			}
@@ -6064,7 +6166,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1354.0, 1476.0, 150.0, 103.0 ],
+					"patching_rect" : [ 1354.0, 1476.0, 150.0, 100.0 ],
 					"text" : "If correct pattern was inputed, then go to next section, during section 4, 8 and 12, if 3 patterns where inputed correctly in a row, then go on to the next section."
 				}
 
@@ -6189,7 +6291,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2300.0, 1291.0, 150.0, 62.0 ],
+					"patching_rect" : [ 2300.0, 1291.0, 150.0, 60.0 ],
 					"text" : "Maybe try to make some of the functions more modular? decoupled from each other"
 				}
 
@@ -6250,7 +6352,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1953.0, 1122.0, 120.0, 22.0 ],
-					"text" : "2 3 4 4 1 4 1 2 4 1"
+					"text" : "3 3 4 3 4 1 3 4 1 2"
 				}
 
 			}
@@ -6530,7 +6632,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 81.0, 718.461606979370117, 157.0, 434.0 ],
+					"patching_rect" : [ 81.0, 718.461606979370117, 157.0, 422.0 ],
 					"text" : "FOR EVERY LEVEL\n\nLEVEL 1 - first pattern\n\nLEVEL 2 - second pattern\n\nLEVEL 3 - third pattern\n\nLEVEL 4 (first check-in) - first, second and third pattern together\n\nLEVEL 5 - fourth pattern\n\nLEVEL 6 - fith pattern\n\nLEVEL 7 - Sixth pattern\n\nLEVEL 8 (second check-in) - fourth, fifth and sixth pattern\n\nLEVEL 9 - seventh pattern\n\nLEVEL 10 - eighth pattern\n\nLEVEL 11 - nineth pattern\n\nLEVEL 12 (third check-in) - seventh, eight and nineth pattern"
 				}
 
@@ -6538,12 +6640,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-85",
-					"linecount" : 6,
+					"linecount" : 4,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 358.955211043357849, 462.686550617218018, 405.0, 89.0 ],
-					"text" : "For this version of the piece, there's 12 levels - 1 level for each key in the circle of 5ths, if you make it through the circle you finish the piece. I also made a score that presents some of these ideas to the performer, and a nice representation of the data that the performer could choose to have as visuals for the piece, or as a guideline of what is being played, but are not required as a part of the performance"
+					"patching_rect" : [ 358.955211043357849, 462.686550617218018, 405.0, 60.0 ],
+					"text" : "For this version of the piece, there's 12 levels - 1 level for each key in the circle of 5ths, if you make it through the circle you finish the piece. I also made a score that presents some of these ideas to the performer (in presentation mode!)"
 				}
 
 			}
@@ -6744,7 +6846,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2157.0, 877.0, 102.0, 25.0 ],
+					"patching_rect" : [ 2157.0, 877.0, 102.0, 24.0 ],
 					"text" : "string length"
 				}
 
@@ -7195,7 +7297,7 @@
 
 							}
  ],
-						"originid" : "pat-14"
+						"originid" : "pat-22"
 					}
 ,
 					"patching_rect" : [ 1204.93836784362793, 537.037079930305481, 53.0, 22.0 ],
@@ -7452,7 +7554,7 @@
 
 							}
  ],
-						"originid" : "pat-16"
+						"originid" : "pat-24"
 					}
 ,
 					"patching_rect" : [ 1345.679119825363159, 537.037079930305481, 59.0, 22.0 ],
@@ -7709,7 +7811,7 @@
 
 							}
  ],
-						"originid" : "pat-18"
+						"originid" : "pat-26"
 					}
 ,
 					"patching_rect" : [ 1487.654439806938171, 537.037079930305481, 59.0, 22.0 ],
@@ -8176,7 +8278,7 @@
 
 							}
  ],
-						"originid" : "pat-20"
+						"originid" : "pat-28"
 					}
 ,
 					"patching_rect" : [ 1639.506303787231445, 537.037079930305481, 59.0, 22.0 ],
@@ -8284,8 +8386,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 49.999994516372681, 61.904755115509033, 195.0, 80.0 ],
-					"text" : "MUS380\n10/26/2024\nJuan Diego Mora\nFINAL"
+					"patching_rect" : [ 49.999994516372681, 61.904755115509033, 195.0, 78.0 ],
+					"text" : "MUS380 - MUS 361\n10/26/2024\nJuan Diego Mora\nFINAL"
 				}
 
 			}
@@ -9473,6 +9575,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"order" : 1,
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"order" : 0,
+					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-240", 1 ],
 					"source" : [ "obj-241", 0 ]
 				}
@@ -9511,7 +9629,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-15", 3 ],
-					"order" : 4,
+					"order" : 3,
 					"source" : [ "obj-253", 0 ]
 				}
 
@@ -9519,7 +9637,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-162", 0 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-253", 0 ]
 				}
 
@@ -9527,7 +9645,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-207", 0 ],
-					"order" : 5,
+					"order" : 4,
 					"source" : [ "obj-253", 0 ]
 				}
 
@@ -9543,15 +9661,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-257", 0 ],
-					"order" : 6,
-					"source" : [ "obj-253", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-259", 0 ],
-					"order" : 1,
+					"order" : 5,
 					"source" : [ "obj-253", 0 ]
 				}
 
@@ -9559,7 +9669,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-49", 0 ],
-					"order" : 7,
+					"order" : 6,
 					"source" : [ "obj-253", 0 ]
 				}
 
@@ -9567,7 +9677,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-81", 0 ],
-					"order" : 3,
+					"order" : 2,
 					"source" : [ "obj-253", 0 ]
 				}
 
@@ -9576,86 +9686,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-75", 0 ],
 					"source" : [ "obj-257", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-196", 9 ],
-					"order" : 0,
-					"source" : [ "obj-259", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-196", 8 ],
-					"order" : 1,
-					"source" : [ "obj-259", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-196", 7 ],
-					"order" : 2,
-					"source" : [ "obj-259", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-196", 6 ],
-					"order" : 3,
-					"source" : [ "obj-259", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-196", 5 ],
-					"order" : 4,
-					"source" : [ "obj-259", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-196", 4 ],
-					"order" : 5,
-					"source" : [ "obj-259", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-196", 3 ],
-					"order" : 6,
-					"source" : [ "obj-259", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-196", 2 ],
-					"order" : 7,
-					"source" : [ "obj-259", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-196", 1 ],
-					"order" : 8,
-					"source" : [ "obj-259", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-196", 0 ],
-					"order" : 9,
-					"source" : [ "obj-259", 0 ]
 				}
 
 			}
@@ -9709,6 +9739,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-281", 0 ],
 					"source" : [ "obj-288", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 0 ],
+					"source" : [ "obj-29", 0 ]
 				}
 
 			}
