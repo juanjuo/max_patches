@@ -10,9 +10,33 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -9.0, 85.0, 1852.0, 929.0 ],
+		"rect" : [ 304.0, 153.0, 1372.0, 694.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-100",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 732.0, 127.0, 75.0, 22.0 ],
+					"text" : "soung3 = 84"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-86",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 732.0, 92.0, 68.0, 22.0 ],
+					"text" : "song2 = 84"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-35",
 					"maxclass" : "newobj",
@@ -56,7 +80,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 298.0, 309.25516939163208, 50.0, 22.0 ],
+					"patching_rect" : [ 298.326909482479095, 303.0, 50.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
@@ -154,7 +178,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 806.31572699546814, 856.842038869857788, 96.0, 36.0 ],
+					"patching_rect" : [ 806.31572699546814, 856.842038869857788, 96.0, 35.0 ],
 					"text" : "0, 1 2 1 2660 0 2"
 				}
 
@@ -237,7 +261,7 @@
 				"box" : 				{
 					"id" : "obj-106",
 					"inputs" : 6,
-					"int" : 5,
+					"int" : 2,
 					"maxclass" : "gswitch",
 					"numinlets" : 7,
 					"numoutlets" : 1,
@@ -338,7 +362,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 393.044852614402771, 79.0, 150.0, 62.0 ],
+					"patching_rect" : [ 393.044852614402771, 79.0, 150.0, 60.0 ],
 					"text" : "working on different multiples of the BPM of the song also yields different results!"
 				}
 
@@ -395,6 +419,7 @@
 				"box" : 				{
 					"id" : "obj-161",
 					"inputs" : 3,
+					"int" : 2,
 					"maxclass" : "gswitch",
 					"numinlets" : 4,
 					"numoutlets" : 1,
@@ -411,7 +436,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1120.0, 815.0, 151.0, 255.0 ],
+					"patching_rect" : [ 1120.0, 815.0, 151.0, 248.0 ],
 					"text" : "Using count~ and Index~ since it uses the sample index to jump around the song\n\nMaybe for the future, it would be cool to implement this using line~ instead, so that then there could be dynamic time-streching with the BPM, since count~ is linked to MSP's sample rate, it is still possible to get a similar effect if you go to audio preferences and change the sample rate!"
 				}
 
@@ -423,7 +448,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 621.0, 616.666629910469055, 153.0, 117.0 ],
+					"patching_rect" : [ 621.0, 616.666629910469055, 153.0, 114.0 ],
 					"text" : "breaking down the song into number of samples, and calculating how many samples are in each beat / bar using BPM will give you all the sample indexes for the beginning of every beat / bar"
 				}
 
@@ -435,7 +460,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 896.0, 90.0, 269.0, 158.0 ],
+					"patching_rect" : [ 957.5, 89.951224803924561, 269.0, 154.0 ],
 					"text" : "This patch takes in a song and breaks it down into every beat / bar. and the markov chain can re-sample the song \"randomly\"\n\nThe patch works for any song, as long as it doesn't change the BPM. \n\nTo start the patch you import a song to the song buffer~ below, then you specify the BPM and beat division in the TEMPO module, and it should crop it up and re-sample automatically"
 				}
 
@@ -447,7 +472,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 560.0, 982.0, 150.0, 75.0 ],
+					"patching_rect" : [ 560.0, 982.0, 150.0, 74.0 ],
 					"text" : "This is me experimenting with the 2d.wave object and getting some other results, similar to Carl Stone's album!"
 				}
 
@@ -1211,7 +1236,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 996.842028021812439, 484.846127152442932, 97.0, 41.0 ],
+					"patching_rect" : [ 996.842028021812439, 484.846127152442932, 97.0, 40.0 ],
 					"text" : "PLAY"
 				}
 
@@ -1224,7 +1249,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1641.463453769683838, 128.36585807800293, 151.0, 41.0 ],
+					"patching_rect" : [ 1641.463453769683838, 128.36585807800293, 151.0, 40.0 ],
 					"text" : "MARKOV"
 				}
 
@@ -1236,7 +1261,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1639.024429321289062, 1219.512224197387695, 150.0, 48.0 ],
+					"patching_rect" : [ 1639.024429321289062, 1219.512224197387695, 150.0, 47.0 ],
 					"text" : "outputs one number at a time, when empty create another list"
 				}
 
@@ -1248,7 +1273,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1316.666588187217712, 1008.97429883480072, 150.0, 34.0 ],
+					"patching_rect" : [ 1316.666588187217712, 1008.97429883480072, 150.0, 33.0 ],
 					"text" : "samples can be triggered every bar or every beat"
 				}
 
@@ -1293,7 +1318,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1514.634182453155518, 185.36585807800293, 151.0, 34.0 ],
+					"patching_rect" : [ 1514.634182453155518, 185.36585807800293, 151.0, 33.0 ],
 					"text" : "size of output stream (and order)"
 				}
 
@@ -1305,7 +1330,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1721.951260566711426, 295.121958255767822, 150.0, 34.0 ],
+					"patching_rect" : [ 1721.951260566711426, 295.121958255767822, 150.0, 33.0 ],
 					"text" : "higher order displays phrases with more sense "
 				}
 
@@ -1317,7 +1342,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1763.0, 171.36585807800293, 150.0, 62.0 ],
+					"patching_rect" : [ 1763.0, 171.36585807800293, 150.0, 60.0 ],
 					"text" : "dump all text into markov (I made the file smaller so I wouldn't take so much time)"
 				}
 
@@ -1330,7 +1355,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1589.963453769683838, 48.012816309928894, 254.0, 69.0 ],
+					"patching_rect" : [ 1589.963453769683838, 48.012816309928894, 254.0, 67.0 ],
 					"text" : "Feeds the markov with text and using the phrases to crop the sampling of a song"
 				}
 
@@ -1354,7 +1379,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1284.0, 626.602518558502197, 150.0, 296.0 ],
+					"patching_rect" : [ 1284.0, 626.602518558502197, 150.0, 288.0 ],
 					"text" : "mapping 1 - 26 to the number of divisions (the first way is just wrapping around a small number of samples, Iiked the result so I left it in. \n\nThe second way is a mapping on the full song, since it's a division and I need integers to start at the right sample index I'm truncating some of the results \n\nThe third is just jumping bar by bar in order, it can be used with different division of beats in the measure to play the song in different time signatures"
 				}
 
@@ -1806,7 +1831,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 287.044852614402771, 147.0, 157.0, 34.0 ],
+					"patching_rect" : [ 287.044852614402771, 147.0, 157.0, 33.0 ],
 					"text" : "beat division (3 and 5 give interesting results)"
 				}
 
@@ -1912,7 +1937,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 234.615370631217957, 309.25516939163208, 50.0, 22.0 ],
+					"patching_rect" : [ 223.044852614402771, 307.0, 50.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
@@ -1976,7 +2001,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 57.0, 190.024407267570496, 115.0, 41.0 ],
+					"patching_rect" : [ 57.0, 190.024407267570496, 115.0, 40.0 ],
 					"text" : "TEMPO"
 				}
 
@@ -2027,7 +2052,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1514.634182453155518, 1073.170757293701172, 229.0, 64.0 ],
+					"patching_rect" : [ 1514.634182453155518, 1073.170757293701172, 229.0, 62.0 ],
 					"text" : "1 14 4 19 3 21 18 18 9 5 4 6 18 15 13 20 8 5 9 18 16 18 5 19 5 14 3 5 19 12 1 13 13 9 14 7 20 8 5 2 15 15 11 3 15 22 5 18 5 4 4 15 15 18 2 5 8 9 14 4"
 				}
 
@@ -2163,7 +2188,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1514.634182453155518, 763.414652347564697, 268.0, 91.0 ],
+					"patching_rect" : [ 1514.634182453155518, 763.414652347564697, 268.0, 89.0 ],
 					"text" : "97 110 100 32 115 99 117 114 114 105 101 100 32 102 114 111 109 32 116 104 101 105 114 32 112 114 101 115 101 110 99 101 32 115 108 97 109 109 105 110 103 32 116 104 101 32 98 111 111 107 99 111 118 101 114 101 100 32 100 111 111 114 32 98 101 104 105 110 100"
 				}
 
@@ -2215,7 +2240,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1514.634182453155518, 595.121965408325195, 343.0, 77.0 ],
+					"patching_rect" : [ 1514.634182453155518, 595.121965408325195, 343.0, 76.0 ],
 					"text" : "and scurried from their presence slamming the bookcovered door behind"
 				}
 
@@ -2347,7 +2372,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1702.439064979553223, 241.463420391082764, 219.0, 36.0 ],
+					"patching_rect" : [ 1702.439064979553223, 241.463420391082764, 219.0, 35.0 ],
 					"text" : "read Harry_Potter_Half_Blood_Prince_Small"
 				}
 
@@ -2442,8 +2467,8 @@
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 1546.341500282287598, 402.439033985137939, 64.0, 22.0 ],
 					"text" : "ml.markov"
 				}
@@ -2456,7 +2481,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 49.999994516372681, 61.904755115509033, 150.0, 62.0 ],
+					"patching_rect" : [ 49.999994516372681, 61.904755115509033, 150.0, 60.0 ],
 					"text" : "MUS380\n10/26/2024\nJuan Diego Mora\nMIDTERM"
 				}
 
@@ -3545,7 +3570,7 @@
 
 			}
  ],
-		"originid" : "pat-14",
+		"originid" : "pat-558",
 		"parameters" : 		{
 			"obj-102" : [ "number[6]", "number[6]", 0 ],
 			"obj-109" : [ "number[21]", "number[21]", 0 ],
@@ -3597,11 +3622,7 @@
 			"inherited_shortname" : 1
 		}
 ,
-		"dependency_cache" : [ 			{
-				"name" : "ml.markov.mxe64",
-				"type" : "mx64"
-			}
- ],
+		"dependency_cache" : [  ],
 		"autosave" : 0
 	}
 
