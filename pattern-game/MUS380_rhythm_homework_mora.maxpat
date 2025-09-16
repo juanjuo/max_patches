@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 2,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 87.0, 1372.0, 694.0 ],
+		"rect" : [ 302.0, 174.0, 1372.0, 666.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
@@ -19,7 +19,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
-					"patching_rect" : [ 910.0, 182.0, 41.0, 22.0 ],
+					"patching_rect" : [ 935.593242645263672, 148.30508828163147, 41.0, 22.0 ],
 					"text" : "zl.mth"
 				}
 
@@ -31,7 +31,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 357.142873108386993, 525.142880618572235, 406.857161045074463, 60.0 ],
+					"patching_rect" : [ 357.142873108386993, 525.142880618572235, 406.857161045074463, 62.0 ],
 					"text" : "This version doesn't focuses heavily on the synth part but on the controller side. I would like to keep thinking about what are some good musical choices to go along the logic and pasing of the piece, but for now I'm just sending all note-generating commands to a midi keyboard"
 				}
 
@@ -55,9 +55,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2931.168803215026855, 617.0, 131.168829917907715, 47.0 ],
+					"patching_rect" : [ 2931.168803215026855, 617.0, 131.168829917907715, 48.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 1049.0, 540.259735107421875, 151.0, 47.0 ],
+					"presentation_rect" : [ 1049.0, 540.259735107421875, 151.0, 48.0 ],
 					"text" : "RESET"
 				}
 
@@ -78,14 +78,14 @@
 				"box" : 				{
 					"fontsize" : 18.0,
 					"id" : "obj-14",
-					"linecount" : 19,
+					"linecount" : 18,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3555.555496215820312, 569.166653096675873, 234.0, 389.0 ],
+					"patching_rect" : [ 3555.555496215820312, 569.166653096675873, 239.0, 379.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 7,
-					"presentation_rect" : [ 38.679484963417053, 287.585376262664795, 989.0, 147.0 ],
+					"presentation_rect" : [ 38.679484963417053, 287.585376262664795, 989.0, 151.0 ],
 					"text" : "These patterns come always in this form, and in order to play through all sections you must play the pattern correctly. \n\nYou can play patterns in any rhythm, as long as they follow the numbers correctly. In section 4, 8, and 12 you will need to play the last 3 patterns you played. \n\nAll patterns reset after you input 10 numbers. So make sure to always play groups of 10 numbers to reset a pattern to play it again"
 				}
 
@@ -98,9 +98,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2983.0, 559.0, 184.0, 40.0 ],
+					"patching_rect" : [ 2983.0, 559.0, 184.0, 41.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 38.679484963417053, 247.363635063171387, 188.0, 40.0 ],
+					"presentation_rect" : [ 38.679484963417053, 247.363635063171387, 188.0, 41.0 ],
 					"text" : "1213214321"
 				}
 
@@ -113,10 +113,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3504.166833758354187, 138.416783094406128, 292.0, 382.0 ],
+					"patching_rect" : [ 3504.166833758354187, 138.416783094406128, 292.0, 393.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 14,
-					"presentation_rect" : [ 1049.0, 37.307686805725098, 292.0, 382.0 ],
+					"presentation_rect" : [ 1049.0, 37.307686805725098, 292.0, 393.0 ],
 					"text" : "SECTIONS\n\n1. Pattern 1\n2. Pattern 2\n3. Pattern 3\n4. Pattern 1 - 2 - 3\n5. \"         \" 4\n6. \"         \" 5\n7. \"         \" 6\n8. \"         \" 4 - 5 - 6\n9. \"         \" 7\n10. \"       \" 8\n11. \"       \" 9\n12. \"       \" 7 - 8 - 9"
 				}
 
@@ -129,9 +129,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3359.0, 369.623373031616211, 110.0, 74.0 ],
+					"patching_rect" : [ 3359.0, 369.623373031616211, 110.0, 75.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 699.999993324279785, 590.909085273742676, 200.0, 40.0 ],
+					"presentation_rect" : [ 699.999993324279785, 590.909085273742676, 200.0, 41.0 ],
 					"text" : "FLOOR TOM"
 				}
 
@@ -143,9 +143,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3168.038930892944336, 321.0, 110.0, 40.0 ],
+					"patching_rect" : [ 3168.038930892944336, 321.0, 110.0, 41.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 559.740254402160645, 472.727268218994141, 78.0, 40.0 ],
+					"presentation_rect" : [ 559.740254402160645, 472.727268218994141, 78.0, 41.0 ],
 					"text" : "TOM"
 				}
 
@@ -157,9 +157,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2972.72724437713623, 321.0, 110.0, 40.0 ],
+					"patching_rect" : [ 2972.72724437713623, 321.0, 110.0, 41.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 348.051944732666016, 472.727268218994141, 78.0, 40.0 ],
+					"presentation_rect" : [ 348.051944732666016, 472.727268218994141, 78.0, 41.0 ],
 					"text" : "TOM"
 				}
 
@@ -171,9 +171,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2777.364211440086365, 392.207788467407227, 115.0, 40.0 ],
+					"patching_rect" : [ 2777.364211440086365, 392.207788467407227, 115.0, 41.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 131.168829917907715, 601.29869556427002, 121.0, 40.0 ],
+					"presentation_rect" : [ 131.168829917907715, 601.29869556427002, 121.0, 41.0 ],
 					"text" : "SNARE"
 				}
 
@@ -185,9 +185,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2728.571402549743652, 210.571426391601562, 350.0, 40.0 ],
+					"patching_rect" : [ 2728.571402549743652, 210.571426391601562, 350.0, 41.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 37.179484963417053, 136.363635063171387, 191.0, 40.0 ],
+					"presentation_rect" : [ 37.179484963417053, 136.363635063171387, 191.0, 41.0 ],
 					"text" : "For Drumset"
 				}
 
@@ -200,10 +200,10 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3790.277958512306213, 131.472338318824768, 232.0, 208.0 ],
+					"patching_rect" : [ 3790.277958512306213, 131.472338318824768, 234.0, 213.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
-					"presentation_rect" : [ 37.179484963417053, 178.363635063171387, 984.0, 67.0 ],
+					"presentation_rect" : [ 37.179484963417053, 178.363635063171387, 984.0, 69.0 ],
 					"text" : "Each of the triggers should be connected to the drums in order. for each section, the computer will generate combination of numbers, and you should guess what the pattern is in order to move forwards in the piece. Patterns will always have 10 numbers, for example:"
 				}
 
@@ -244,7 +244,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -438,15 +438,10 @@
 								}
 
 							}
- ],
-						"originid" : "pat-8"
+ ]
 					}
 ,
 					"patching_rect" : [ 2719.480493545532227, 372.727269172668457, 53.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"globalpatchername" : ""
-					}
-,
 					"text" : "p trigger"
 				}
 
@@ -475,7 +470,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -669,15 +664,10 @@
 								}
 
 							}
- ],
-						"originid" : "pat-10"
+ ]
 					}
 ,
 					"patching_rect" : [ 2910.389582633972168, 312.98701000213623, 59.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"globalpatchername" : ""
-					}
-,
 					"text" : "p trigger2"
 				}
 
@@ -706,7 +696,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -900,15 +890,10 @@
 								}
 
 							}
- ],
-						"originid" : "pat-12"
+ ]
 					}
 ,
 					"patching_rect" : [ 3098.701269149780273, 309.090906143188477, 59.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"globalpatchername" : ""
-					}
-,
 					"text" : "p trigger3"
 				}
 
@@ -937,7 +922,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1131,15 +1116,10 @@
 								}
 
 							}
- ],
-						"originid" : "pat-14"
+ ]
 					}
 ,
 					"patching_rect" : [ 3284.415553092956543, 376.623373031616211, 59.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"globalpatchername" : ""
-					}
-,
 					"text" : "p trigger4"
 				}
 
@@ -1152,9 +1132,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3344.15581226348877, 455.844151496887207, 68.0, 87.0 ],
+					"patching_rect" : [ 3344.15581226348877, 455.844151496887207, 68.0, 89.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 764.935057640075684, 683.116876602172852, 69.0, 87.0 ],
+					"presentation_rect" : [ 764.935057640075684, 683.116876602172852, 69.0, 89.0 ],
 					"text" : "4"
 				}
 
@@ -1167,9 +1147,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3161.038930892944336, 392.207788467407227, 68.0, 87.0 ],
+					"patching_rect" : [ 3161.038930892944336, 392.207788467407227, 68.0, 89.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 570.129864692687988, 557.142851829528809, 69.0, 87.0 ],
+					"presentation_rect" : [ 570.129864692687988, 557.142851829528809, 69.0, 89.0 ],
 					"text" : "3"
 				}
 
@@ -1182,9 +1162,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2972.72724437713623, 392.207788467407227, 68.0, 87.0 ],
+					"patching_rect" : [ 2972.72724437713623, 392.207788467407227, 68.0, 89.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 357.142853736877441, 557.142851829528809, 69.0, 87.0 ],
+					"presentation_rect" : [ 357.142853736877441, 557.142851829528809, 69.0, 89.0 ],
 					"text" : "2"
 				}
 
@@ -1197,9 +1177,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2779.220752716064453, 458.441554069519043, 68.0, 87.0 ],
+					"patching_rect" : [ 2779.220752716064453, 458.441554069519043, 68.0, 89.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 159.74025821685791, 683.116876602172852, 69.0, 87.0 ],
+					"presentation_rect" : [ 159.74025821685791, 683.116876602172852, 69.0, 89.0 ],
 					"text" : "1"
 				}
 
@@ -1267,9 +1247,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 3284.415553092956543, 179.22077751159668, 69.767439365386963, 33.0 ],
+					"patching_rect" : [ 3284.415553092956543, 179.22077751159668, 69.767439365386963, 34.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 606.410220265388489, 92.307686805725098, 59.0, 33.0 ],
+					"presentation_rect" : [ 606.410220265388489, 92.307686805725098, 59.0, 34.0 ],
 					"text" : "v0.1"
 				}
 
@@ -1281,9 +1261,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2728.571402549743652, 124.675323486328125, 557.0, 87.0 ],
+					"patching_rect" : [ 2728.571402549743652, 124.675323486328125, 557.0, 89.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 37.179484963417053, 37.307686805725098, 559.0, 87.0 ],
+					"presentation_rect" : [ 37.179484963417053, 37.307686805725098, 559.0, 89.0 ],
 					"text" : "Black Box Music "
 				}
 
@@ -1367,7 +1347,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 733.928564429283142, 1216.964274108409882, 190.0, 34.0 ],
+					"patching_rect" : [ 733.928564429283142, 1216.964274108409882, 190.0, 35.0 ],
 					"text" : "the music patch"
 				}
 
@@ -1384,7 +1364,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1473,7 +1453,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 942.553184747695923, 582.978719234466553, 50.0, 22.0 ],
-									"text" : "61"
+									"text" : "69"
 								}
 
 							}
@@ -1485,7 +1465,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 942.553184747695923, 434.042550086975098, 50.0, 22.0 ],
-									"text" : "63"
+									"text" : "62"
 								}
 
 							}
@@ -1497,7 +1477,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 942.537279725074768, 297.761183381080627, 50.0, 22.0 ],
-									"text" : "87"
+									"text" : "84"
 								}
 
 							}
@@ -1509,7 +1489,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1042.553184032440186, 297.87233829498291, 50.0, 22.0 ],
-									"text" : "91"
+									"text" : "84"
 								}
 
 							}
@@ -1521,7 +1501,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 1163.829778909683228, 297.87233829498291, 50.0, 22.0 ],
-									"text" : "95"
+									"text" : "86"
 								}
 
 							}
@@ -1533,7 +1513,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 761.702122211456299, 804.255313396453857, 50.0, 22.0 ],
-									"text" : "55"
+									"text" : "57"
 								}
 
 							}
@@ -1545,7 +1525,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 680.851058959960938, 804.255313396453857, 50.0, 22.0 ],
-									"text" : "49"
+									"text" : "50"
 								}
 
 							}
@@ -1557,7 +1537,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 602.127655267715454, 804.255313396453857, 50.0, 22.0 ],
-									"text" : "57"
+									"text" : "52"
 								}
 
 							}
@@ -1569,7 +1549,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 525.531911134719849, 804.255313396453857, 50.0, 22.0 ],
-									"text" : "49"
+									"text" : "55"
 								}
 
 							}
@@ -1581,7 +1561,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 455.319145679473877, 804.255313396453857, 50.0, 22.0 ],
-									"text" : "49"
+									"text" : "57"
 								}
 
 							}
@@ -1593,7 +1573,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 385.106380224227905, 804.255313396453857, 50.0, 22.0 ],
-									"text" : "55"
+									"text" : "48"
 								}
 
 							}
@@ -1605,7 +1585,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 317.021274328231812, 804.255313396453857, 50.0, 22.0 ],
-									"text" : "59"
+									"text" : "50"
 								}
 
 							}
@@ -1617,7 +1597,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 246.80850887298584, 804.255313396453857, 50.0, 22.0 ],
-									"text" : "59"
+									"text" : "50"
 								}
 
 							}
@@ -1629,7 +1609,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 172.340424299240112, 804.255313396453857, 50.0, 22.0 ],
-									"text" : "49"
+									"text" : "52"
 								}
 
 							}
@@ -1641,7 +1621,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 93.617020606994629, 804.255313396453857, 50.0, 22.0 ],
-									"text" : "57"
+									"text" : "55"
 								}
 
 							}
@@ -1653,7 +1633,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 329.787231683731079, 297.87233829498291, 50.0, 22.0 ],
-									"text" : "27"
+									"text" : "24"
 								}
 
 							}
@@ -1665,7 +1645,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 204.255317687988281, 297.87233829498291, 50.0, 22.0 ],
-									"text" : "47"
+									"text" : "36"
 								}
 
 							}
@@ -1677,7 +1657,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 74.468084573745728, 297.87233829498291, 62.0, 22.0 ],
-									"text" : "45"
+									"text" : "36"
 								}
 
 							}
@@ -1976,7 +1956,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 510.638294219970703, 476.595741271972656, 159.0, 35.0 ],
-									"text" : "57 59 51 57 49 59 59 55 49 49 57 49 55 51 55 59 51 49"
+									"text" : "48 48 48 55 52 50 50 48 57 55 52 50 57 48 48 50 50 57"
 								}
 
 							}
@@ -2036,7 +2016,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 497.107615113258362, 382.835807204246521, 50.0, 22.0 ],
-									"text" : "57"
+									"text" : "50"
 								}
 
 							}
@@ -3365,15 +3345,10 @@
 								}
 
 							}
- ],
-						"originid" : "pat-16"
+ ]
 					}
 ,
 					"patching_rect" : [ 799.107135236263275, 1260.714273691177368, 47.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"globalpatchername" : ""
-					}
-,
 					"text" : "p synth"
 				}
 
@@ -3385,7 +3360,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2222.80699634552002, 913.0, 150.0, 74.0 ],
+					"patching_rect" : [ 2222.80699634552002, 913.0, 150.0, 75.0 ],
 					"text" : "I could change the length of the inputted string depending on the level, I'm going with 10 for all the levels for this version"
 				}
 
@@ -3408,7 +3383,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 357.089539468288422, 225.373126268386841, 411.0, 221.0 ],
+					"patching_rect" : [ 357.089539468288422, 225.373126268386841, 411.0, 227.0 ],
 					"text" : "In this iteration of the piece, I was thinking to use drums with contact mics as input, and depending on how you play these drums, certain parts of the patch will unlock. In this version of the piece, there's a clear through line that could be followed, and a clear beginning and end. But thinking about the black box music concept brings other ideas into how this sort of performance could be done differently and I'd like to keep working with this concept in the future. For example, I would love to be able to implement it using objects like Bonk~ or Sigmund~ to make it compatible with other instruments, and to find a finer range of control between the performer and the patch, so that the patch not only responds to the specific input, but how that input is being played (loud or soft, fast or slow etc). I would also like to load the patch on some sort of embedded system (maybe like one of those Teensy or Daisy microprocessors, or a Raspberry pi Zero 2W which recently got added to MAX's RNBO library, and it's much cheaper) so that there's a real element of disconection between the performer and the computer."
 				}
 
@@ -3420,7 +3395,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 358.955211043357849, 156.0, 400.746254324913025, 60.0 ],
+					"patching_rect" : [ 358.955211043357849, 156.0, 400.746254324913025, 62.0 ],
 					"text" : "A black box accompanist, similar to the way Interspicies Smalltalk by\nDavid Behman works. This patch is a synth that is being controlled by a performer in very specific ways. and most of the interactions between the performer and the patch have been hidden to the performer. "
 				}
 
@@ -3432,7 +3407,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 314.285711288452148, 1392.5, 153.0, 87.0 ],
+					"patching_rect" : [ 314.285711288452148, 1392.5, 153.0, 89.0 ],
 					"text" : "These receive all the inputs, if they're correct. These can be used to give feedback to the player for them to know if they're playing the right thing"
 				}
 
@@ -3566,7 +3541,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 310.389607429504395, 1296.39610481262207, 150.0, 47.0 ],
+					"patching_rect" : [ 310.389607429504395, 1296.39610481262207, 150.0, 48.0 ],
 					"text" : "Means that the check-in has been completed and you can move on"
 				}
 
@@ -3590,7 +3565,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 310.389607429504395, 1195.097404479980469, 150.0, 60.0 ],
+					"patching_rect" : [ 310.389607429504395, 1195.097404479980469, 150.0, 62.0 ],
 					"text" : "Means that the required number of inputs for the check-in has been completed (three patterns)"
 				}
 
@@ -3636,7 +3611,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 310.389607429504395, 1105.487015724182129, 150.0, 33.0 ],
+					"patching_rect" : [ 310.389607429504395, 1105.487015724182129, 150.0, 34.0 ],
 					"text" : "Means you have reached levels 4, 8 and 12"
 				}
 
@@ -3717,7 +3692,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 310.389607429504395, 979.512990951538086, 150.0, 33.0 ],
+					"patching_rect" : [ 310.389607429504395, 979.512990951538086, 150.0, 34.0 ],
 					"text" : "Keeps track of what level you're in"
 				}
 
@@ -3741,7 +3716,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 310.389607429504395, 873.019485473632812, 151.0, 60.0 ],
+					"patching_rect" : [ 310.389607429504395, 873.019485473632812, 151.0, 62.0 ],
 					"text" : "Means that the pattern inputed is the correct pattern, and you can go to the next Level"
 				}
 
@@ -3776,7 +3751,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 310.389607429504395, 752.240265846252441, 150.0, 74.0 ],
+					"patching_rect" : [ 310.389607429504395, 752.240265846252441, 150.0, 75.0 ],
 					"text" : "Means that the required number of inputs has been reached, and it's ready to start counting inputs again"
 				}
 
@@ -3827,7 +3802,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3883,7 +3858,7 @@
 										"appversion" : 										{
 											"major" : 9,
 											"minor" : 0,
-											"revision" : 2,
+											"revision" : 8,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -4637,15 +4612,10 @@
 												}
 
 											}
- ],
-										"originid" : "pat-20"
+ ]
 									}
 ,
 									"patching_rect" : [ 302.0, 536.0, 75.0, 22.0 ],
-									"saved_object_attributes" : 									{
-										"globalpatchername" : ""
-									}
-,
 									"text" : "p more_stuff"
 								}
 
@@ -4925,7 +4895,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 424.0, 409.0, 115.0, 22.0 ],
-									"text" : "4 4 3 4 3 2 4 3 2 1"
+									"text" : "1 4 3 3 2 3 2 1 3 2"
 								}
 
 							}
@@ -5205,7 +5175,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 89.0, 409.0, 115.0, 22.0 ],
-									"text" : "4 4 1 4 1 2 4 1 2 3"
+									"text" : "1 2 3 3 4 3 4 1 3 4"
 								}
 
 							}
@@ -5626,15 +5596,10 @@
 								}
 
 							}
- ],
-						"originid" : "pat-18"
+ ]
 					}
 ,
 					"patching_rect" : [ 962.244888782501221, 1269.821416556835175, 158.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"globalpatchername" : ""
-					}
-,
 					"text" : "p PATTERN_GENERATION"
 				}
 
@@ -5992,7 +5957,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1744.0, 1336.0, 50.0, 22.0 ],
-					"text" : "0"
+					"text" : "1"
 				}
 
 			}
@@ -6166,7 +6131,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1354.0, 1476.0, 150.0, 100.0 ],
+					"patching_rect" : [ 1354.0, 1476.0, 150.0, 103.0 ],
 					"text" : "If correct pattern was inputed, then go to next section, during section 4, 8 and 12, if 3 patterns where inputed correctly in a row, then go on to the next section."
 				}
 
@@ -6291,7 +6256,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2300.0, 1291.0, 150.0, 60.0 ],
+					"patching_rect" : [ 2300.0, 1291.0, 150.0, 62.0 ],
 					"text" : "Maybe try to make some of the functions more modular? decoupled from each other"
 				}
 
@@ -6352,7 +6317,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1953.0, 1122.0, 120.0, 22.0 ],
-					"text" : "3 3 4 3 4 1 3 4 1 2"
+					"text" : "1"
 				}
 
 			}
@@ -6632,7 +6597,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 81.0, 718.461606979370117, 157.0, 422.0 ],
+					"patching_rect" : [ 81.0, 718.461606979370117, 157.0, 434.0 ],
 					"text" : "FOR EVERY LEVEL\n\nLEVEL 1 - first pattern\n\nLEVEL 2 - second pattern\n\nLEVEL 3 - third pattern\n\nLEVEL 4 (first check-in) - first, second and third pattern together\n\nLEVEL 5 - fourth pattern\n\nLEVEL 6 - fith pattern\n\nLEVEL 7 - Sixth pattern\n\nLEVEL 8 (second check-in) - fourth, fifth and sixth pattern\n\nLEVEL 9 - seventh pattern\n\nLEVEL 10 - eighth pattern\n\nLEVEL 11 - nineth pattern\n\nLEVEL 12 (third check-in) - seventh, eight and nineth pattern"
 				}
 
@@ -6644,7 +6609,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 358.955211043357849, 462.686550617218018, 405.0, 60.0 ],
+					"patching_rect" : [ 358.955211043357849, 462.686550617218018, 405.0, 62.0 ],
 					"text" : "For this version of the piece, there's 12 levels - 1 level for each key in the circle of 5ths, if you make it through the circle you finish the piece. I also made a score that presents some of these ideas to the performer (in presentation mode!)"
 				}
 
@@ -6846,7 +6811,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 2157.0, 877.0, 102.0, 24.0 ],
+					"patching_rect" : [ 2157.0, 877.0, 102.0, 25.0 ],
 					"text" : "string length"
 				}
 
@@ -6963,7 +6928,6 @@
 							"parameter_longname" : "button[3]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "button[3]",
 							"parameter_type" : 2
 						}
@@ -6989,7 +6953,6 @@
 							"parameter_longname" : "button[2]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "button[2]",
 							"parameter_type" : 2
 						}
@@ -7015,7 +6978,6 @@
 							"parameter_longname" : "button[1]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "button[1]",
 							"parameter_type" : 2
 						}
@@ -7041,7 +7003,6 @@
 							"parameter_longname" : "button",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "button",
 							"parameter_type" : 2
 						}
@@ -7102,7 +7063,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7296,15 +7257,10 @@
 								}
 
 							}
- ],
-						"originid" : "pat-22"
+ ]
 					}
 ,
 					"patching_rect" : [ 1204.93836784362793, 537.037079930305481, 53.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"globalpatchername" : ""
-					}
-,
 					"text" : "p trigger"
 				}
 
@@ -7359,7 +7315,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7553,15 +7509,10 @@
 								}
 
 							}
- ],
-						"originid" : "pat-24"
+ ]
 					}
 ,
 					"patching_rect" : [ 1345.679119825363159, 537.037079930305481, 59.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"globalpatchername" : ""
-					}
-,
 					"text" : "p trigger2"
 				}
 
@@ -7616,7 +7567,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -7810,15 +7761,10 @@
 								}
 
 							}
- ],
-						"originid" : "pat-26"
+ ]
 					}
 ,
 					"patching_rect" : [ 1487.654439806938171, 537.037079930305481, 59.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"globalpatchername" : ""
-					}
-,
 					"text" : "p trigger3"
 				}
 
@@ -7975,8 +7921,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1882.71619975566864, 966.0, 35.0, 35.0 ],
-					"svg" : ""
+					"patching_rect" : [ 1882.71619975566864, 966.0, 35.0, 35.0 ]
 				}
 
 			}
@@ -7988,8 +7933,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1791.71619975566864, 966.0, 35.0, 35.0 ],
-					"svg" : ""
+					"patching_rect" : [ 1791.71619975566864, 966.0, 35.0, 35.0 ]
 				}
 
 			}
@@ -8001,8 +7945,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1691.71619975566864, 965.0, 35.0, 35.0 ],
-					"svg" : ""
+					"patching_rect" : [ 1691.71619975566864, 965.0, 35.0, 35.0 ]
 				}
 
 			}
@@ -8014,8 +7957,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1593.71619975566864, 965.0, 35.0, 35.0 ],
-					"svg" : ""
+					"patching_rect" : [ 1593.71619975566864, 965.0, 35.0, 35.0 ]
 				}
 
 			}
@@ -8027,8 +7969,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1496.71619975566864, 966.0, 35.0, 35.0 ],
-					"svg" : ""
+					"patching_rect" : [ 1496.71619975566864, 966.0, 35.0, 35.0 ]
 				}
 
 			}
@@ -8040,8 +7981,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1404.71619975566864, 966.0, 35.0, 35.0 ],
-					"svg" : ""
+					"patching_rect" : [ 1404.71619975566864, 966.0, 35.0, 35.0 ]
 				}
 
 			}
@@ -8083,7 +8023,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -8277,15 +8217,10 @@
 								}
 
 							}
- ],
-						"originid" : "pat-28"
+ ]
 					}
 ,
 					"patching_rect" : [ 1639.506303787231445, 537.037079930305481, 59.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"globalpatchername" : ""
-					}
-,
 					"text" : "p trigger4"
 				}
 
@@ -8298,8 +8233,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1307.71619975566864, 966.0, 35.0, 35.0 ],
-					"svg" : ""
+					"patching_rect" : [ 1307.71619975566864, 966.0, 35.0, 35.0 ]
 				}
 
 			}
@@ -8311,8 +8245,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1208.71619975566864, 969.0, 35.0, 35.0 ],
-					"svg" : ""
+					"patching_rect" : [ 1208.71619975566864, 969.0, 35.0, 35.0 ]
 				}
 
 			}
@@ -8324,8 +8257,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1110.71619975566864, 970.0, 35.0, 35.0 ],
-					"svg" : ""
+					"patching_rect" : [ 1110.71619975566864, 970.0, 35.0, 35.0 ]
 				}
 
 			}
@@ -8337,8 +8269,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1013.71619975566864, 971.0, 35.0, 35.0 ],
-					"svg" : ""
+					"patching_rect" : [ 1013.71619975566864, 971.0, 35.0, 35.0 ]
 				}
 
 			}
@@ -8386,7 +8317,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 49.999994516372681, 61.904755115509033, 195.0, 78.0 ],
+					"patching_rect" : [ 49.999994516372681, 61.904755115509033, 195.0, 80.0 ],
 					"text" : "MUS380 - MUS 361\n10/26/2024\nJuan Diego Mora\nFINAL"
 				}
 
@@ -10242,7 +10173,6 @@
 
 			}
  ],
-		"originid" : "pat-6",
 		"parameters" : 		{
 			"obj-153" : [ "button", "button", 0 ],
 			"obj-155" : [ "button[1]", "button[1]", 0 ],
