@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 2,
+			"revision" : 9,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -13,6 +13,56 @@
 		"rect" : [ 34.0, 87.0, 1372.0, 694.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-137",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 204.0, 257.0, 45.0, 22.0 ],
+					"text" : "set 1 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-118",
+					"lastchannelcount" : 0,
+					"maxclass" : "live.gain~",
+					"numinlets" : 2,
+					"numoutlets" : 5,
+					"outlettype" : [ "signal", "signal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 181.0, 383.695644855499268, 48.0, 136.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "live.gain~[4]",
+							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
+							"parameter_modmode" : 3,
+							"parameter_shortname" : "live.gain~[4]",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"varname" : "live.gain~[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "ezadc~",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 184.0, 318.5, 45.0, 45.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-127",
 					"maxclass" : "message",
@@ -66,7 +116,6 @@
 							"parameter_longname" : "button[26]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "button[26]",
 							"parameter_type" : 2
 						}
@@ -117,9 +166,9 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "dial[1]",
-							"parameter_mmax" : 76.0,
+							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
 							"parameter_modmode" : 3,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "dial",
 							"parameter_type" : 0
 						}
@@ -197,9 +246,9 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "dial",
-							"parameter_mmax" : 76.0,
+							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
 							"parameter_modmode" : 3,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "dial",
 							"parameter_type" : 0
 						}
@@ -227,7 +276,6 @@
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_modmode" : 3,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "live.gain~[3]",
 							"parameter_type" : 0,
 							"parameter_unitstyle" : 4
@@ -256,7 +304,6 @@
 							"parameter_longname" : "button[24]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "button[24]",
 							"parameter_type" : 2
 						}
@@ -310,7 +357,6 @@
 							"parameter_longname" : "button[23]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "button[23]",
 							"parameter_type" : 2
 						}
@@ -433,7 +479,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 9,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -461,7 +507,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 535.0, 432.0, 50.0, 22.0 ],
-									"text" : "16"
+									"text" : "4"
 								}
 
 							}
@@ -493,7 +539,6 @@
 											"parameter_longname" : "button[25]",
 											"parameter_mmax" : 1,
 											"parameter_modmode" : 0,
-											"parameter_osc_name" : "<default>",
 											"parameter_shortname" : "button[24]",
 											"parameter_type" : 2
 										}
@@ -543,7 +588,6 @@
 											"parameter_longname" : "button[22]",
 											"parameter_mmax" : 1,
 											"parameter_modmode" : 0,
-											"parameter_osc_name" : "<default>",
 											"parameter_shortname" : "button[23]",
 											"parameter_type" : 2
 										}
@@ -581,14 +625,12 @@
 											"parameter_longname" : "toggle[4]",
 											"parameter_mmax" : 1,
 											"parameter_modmode" : 0,
-											"parameter_osc_name" : "<default>",
 											"parameter_shortname" : "toggle[5]",
 											"parameter_type" : 2
 										}
 
 									}
 ,
-									"svg" : "",
 									"varname" : "toggle[5]"
 								}
 
@@ -666,15 +708,10 @@
 								}
 
 							}
- ],
-						"originid" : "pat-6"
+ ]
 					}
 ,
 					"patching_rect" : [ 2258.620808124542236, 161.206905007362366, 93.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"globalpatchername" : ""
-					}
-,
 					"text" : "p little-quantizer"
 				}
 
@@ -714,7 +751,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 9,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -722,7 +759,6 @@
 						"classnamespace" : "box",
 						"rect" : [ 324.0, 98.0, 1000.0, 632.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-44",
@@ -979,7 +1015,6 @@
 											"parameter_mmax" : 6.0,
 											"parameter_mmin" : -70.0,
 											"parameter_modmode" : 3,
-											"parameter_osc_name" : "<default>",
 											"parameter_shortname" : "live.gain~",
 											"parameter_type" : 0,
 											"parameter_unitstyle" : 4
@@ -1065,7 +1100,6 @@
 											"parameter_mmax" : 6.0,
 											"parameter_mmin" : -70.0,
 											"parameter_modmode" : 3,
-											"parameter_osc_name" : "<default>",
 											"parameter_shortname" : "live.gain~",
 											"parameter_type" : 0,
 											"parameter_unitstyle" : 4
@@ -1485,7 +1519,7 @@
 									"fontname" : "Arial",
 									"fontsize" : 13.0,
 									"id" : "obj-16",
-									"items" : [ "Keystation Mini 32 MK3", ",", "UMC1820", ",", "to Max 1", ",", "to Max 2" ],
+									"items" : [ "to Max 1", ",", "to Max 2" ],
 									"maxclass" : "umenu",
 									"numinlets" : 1,
 									"numoutlets" : 3,
@@ -1594,12 +1628,12 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-63",
-									"linecount" : 18,
+									"linecount" : 17,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 494.0, 853.0, 59.0, 250.0 ],
+									"patching_rect" : [ 494.0, 853.0, 62.0, 236.0 ],
 									"text" : "Now I feel nostalgic in a way I’ve never felt before\\, reminiscence of the past. I guess that’s just how growing feels. Things change quickly."
 								}
 
@@ -1830,8 +1864,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 408.0, 126.0, 24.0, 24.0 ],
-									"svg" : ""
+									"patching_rect" : [ 408.0, 126.0, 24.0, 24.0 ]
 								}
 
 							}
@@ -1919,7 +1952,7 @@
 									"maxclass" : "newobj",
 									"numinlets" : 1,
 									"numoutlets" : 2,
-									"outlettype" : [ "", "" ],
+									"outlettype" : [ "jit_matrix", "" ],
 									"patching_rect" : [ 122.0, 492.0, 74.0, 23.0 ],
 									"text" : "jit.gl.text2d"
 								}
@@ -2587,15 +2620,10 @@
 								}
 
 							}
- ],
-						"originid" : "pat-8"
+ ]
 					}
 ,
 					"patching_rect" : [ 1117.021268606185913, 143.61702024936676, 110.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"globalpatchername" : ""
-					}
-,
 					"text" : "p text_visualization"
 				}
 
@@ -2630,14 +2658,12 @@
 							"parameter_longname" : "toggle[3]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "toggle[3]",
 							"parameter_type" : 2
 						}
 
 					}
 ,
-					"svg" : "",
 					"varname" : "toggle[3]"
 				}
 
@@ -2743,7 +2769,6 @@
 							"parameter_longname" : "button[21]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "button[21]",
 							"parameter_type" : 2
 						}
@@ -2769,7 +2794,6 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-431",
-					"int" : 1,
 					"maxclass" : "gswitch",
 					"numinlets" : 3,
 					"numoutlets" : 1,
@@ -2796,7 +2820,6 @@
 							"parameter_longname" : "button[20]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "button[20]",
 							"parameter_type" : 2
 						}
@@ -2836,7 +2859,6 @@
 							"parameter_longname" : "button[19]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "button[19]",
 							"parameter_type" : 2
 						}
@@ -2864,7 +2886,6 @@
 							"parameter_longname" : "button[18]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "button[18]",
 							"parameter_type" : 2
 						}
@@ -2892,7 +2913,6 @@
 							"parameter_longname" : "button[17]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "button[17]",
 							"parameter_type" : 2
 						}
@@ -2920,7 +2940,6 @@
 							"parameter_longname" : "button[9]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "button[9]",
 							"parameter_type" : 2
 						}
@@ -2948,7 +2967,6 @@
 							"parameter_longname" : "button[16]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "button[16]",
 							"parameter_type" : 2
 						}
@@ -3143,7 +3161,6 @@
 							"parameter_invisible" : 1,
 							"parameter_longname" : "number[6]",
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "number[6]",
 							"parameter_type" : 3
 						}
@@ -3260,7 +3277,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 9,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3268,7 +3285,6 @@
 						"classnamespace" : "box",
 						"rect" : [ 108.0, 87.0, 1185.0, 694.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-1",
@@ -3639,18 +3655,13 @@
 								}
 
 							}
- ],
-						"originid" : "pat-14"
+ ]
 					}
 ,
 					"patching_rect" : [ 1083.695631504058838, 948.913025379180908, 124.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 3,
 					"presentation_rect" : [ 245.0, 1071.0, 100.0, 49.0 ],
-					"saved_object_attributes" : 					{
-						"globalpatchername" : ""
-					}
-,
 					"text" : "p keyboard_controller"
 				}
 
@@ -3853,7 +3864,6 @@
 							"parameter_longname" : "button[15]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "button[15]",
 							"parameter_type" : 2
 						}
@@ -3879,7 +3889,6 @@
 							"parameter_longname" : "button[7]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "button[7]",
 							"parameter_type" : 2
 						}
@@ -3916,7 +3925,6 @@
 							"parameter_invisible" : 1,
 							"parameter_longname" : "number[5]",
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "number[5]",
 							"parameter_type" : 3
 						}
@@ -3953,7 +3961,6 @@
 							"parameter_invisible" : 1,
 							"parameter_longname" : "number[4]",
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "number[4]",
 							"parameter_type" : 3
 						}
@@ -4019,7 +4026,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1132.142846345901489, 485.71428108215332, 35.0, 22.0 ],
+					"patching_rect" : [ 1165.642845988273621, 487.356313705444336, 35.0, 22.0 ],
 					"text" : "clear"
 				}
 
@@ -4201,6 +4208,8 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1020.689638137817383, 417.241372346878052, 35.0, 22.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 986.0, 465.0, 35.0, 22.0 ],
 					"text" : "clear"
 				}
 
@@ -4396,14 +4405,12 @@
 							"parameter_longname" : "toggle[2]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "toggle[2]",
 							"parameter_type" : 2
 						}
 
 					}
 ,
-					"svg" : "",
 					"varname" : "toggle[2]"
 				}
 
@@ -4470,14 +4477,12 @@
 							"parameter_longname" : "toggle[1]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "toggle[1]",
 							"parameter_type" : 2
 						}
 
 					}
 ,
-					"svg" : "",
 					"varname" : "toggle[1]"
 				}
 
@@ -4604,7 +4609,6 @@
 							"parameter_invisible" : 1,
 							"parameter_longname" : "number[22]",
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "number[22]",
 							"parameter_type" : 3
 						}
@@ -4629,7 +4633,6 @@
 							"parameter_invisible" : 1,
 							"parameter_longname" : "number[2]",
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "number[2]",
 							"parameter_type" : 3
 						}
@@ -4668,7 +4671,6 @@
 							"parameter_longname" : "button[14]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "button[14]",
 							"parameter_type" : 2
 						}
@@ -4687,7 +4689,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 2119.46919709444046, 819.702984571456909, 35.0, 22.0 ],
-					"text" : "set 4"
+					"text" : "set 1"
 				}
 
 			}
@@ -4718,7 +4720,6 @@
 							"parameter_longname" : "button[6]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "button[6]",
 							"parameter_type" : 2
 						}
@@ -4780,7 +4781,6 @@
 							"parameter_longname" : "button[3]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "button[3]",
 							"parameter_type" : 2
 						}
@@ -4819,7 +4819,6 @@
 							"parameter_longname" : "button[2]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "button[2]",
 							"parameter_type" : 2
 						}
@@ -4881,7 +4880,6 @@
 							"parameter_longname" : "button[1]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "button[1]",
 							"parameter_type" : 2
 						}
@@ -4907,7 +4905,6 @@
 							"parameter_longname" : "button[13]",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "button[13]",
 							"parameter_type" : 2
 						}
@@ -5035,7 +5032,6 @@
 							"parameter_invisible" : 1,
 							"parameter_longname" : "number[1]",
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "number[1]",
 							"parameter_type" : 3
 						}
@@ -5060,7 +5056,6 @@
 							"parameter_invisible" : 1,
 							"parameter_longname" : "number[21]",
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "number[21]",
 							"parameter_type" : 3
 						}
@@ -5100,14 +5095,12 @@
 							"parameter_longname" : "toggle",
 							"parameter_mmax" : 1,
 							"parameter_modmode" : 0,
-							"parameter_osc_name" : "<default>",
 							"parameter_shortname" : "toggle",
 							"parameter_type" : 2
 						}
 
 					}
 ,
-					"svg" : "",
 					"varname" : "toggle"
 				}
 
@@ -5136,7 +5129,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 9,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -5144,8 +5137,34 @@
 						"classnamespace" : "box",
 						"rect" : [ 34.0, 87.0, 1372.0, 694.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
-						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"lastchannelcount" : 0,
+									"maxclass" : "live.gain~",
+									"numinlets" : 2,
+									"numoutlets" : 5,
+									"outlettype" : [ "signal", "signal", "", "float", "list" ],
+									"parameter_enable" : 1,
+									"patching_rect" : [ 602.0, 537.0, 48.0, 136.0 ],
+									"saved_attribute_attributes" : 									{
+										"valueof" : 										{
+											"parameter_longname" : "live.gain~",
+											"parameter_mmax" : 6.0,
+											"parameter_mmin" : -70.0,
+											"parameter_modmode" : 3,
+											"parameter_shortname" : "live.gain~",
+											"parameter_type" : 0,
+											"parameter_unitstyle" : 4
+										}
+
+									}
+,
+									"varname" : "live.gain~"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-6",
 									"maxclass" : "newobj",
@@ -5231,7 +5250,7 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-57",
-									"int" : 2,
+									"int" : 1,
 									"maxclass" : "gswitch2",
 									"numinlets" : 2,
 									"numoutlets" : 6,
@@ -5345,8 +5364,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 1103.0, 232.0, 48.039169192314148, 48.039169192314148 ],
-									"svg" : ""
+									"patching_rect" : [ 1103.0, 232.0, 48.039169192314148, 48.039169192314148 ]
 								}
 
 							}
@@ -5418,7 +5436,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 615.0, 275.0, 45.0, 22.0 ],
-									"text" : "set 1 4"
+									"text" : "set 1 1"
 								}
 
 							}
@@ -5479,7 +5497,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 920.0, 449.0, 85.0, 22.0 ],
-									"text" : "3835."
+									"text" : "4795."
 								}
 
 							}
@@ -5527,8 +5545,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 869.0, 325.0, 50.159574270248413, 50.159574270248413 ],
-									"svg" : ""
+									"patching_rect" : [ 869.0, 325.0, 50.159574270248413, 50.159574270248413 ]
 								}
 
 							}
@@ -5648,8 +5665,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 317.894712209701538, 572.46019172668457, 24.0, 24.0 ],
-									"svg" : ""
+									"patching_rect" : [ 317.894712209701538, 572.46019172668457, 24.0, 24.0 ]
 								}
 
 							}
@@ -5709,8 +5725,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"parameter_enable" : 0,
-									"patching_rect" : [ 317.72365403175354, 311.578923225402832, 24.0, 24.0 ],
-									"svg" : ""
+									"patching_rect" : [ 317.72365403175354, 311.578923225402832, 24.0, 24.0 ]
 								}
 
 							}
@@ -6023,7 +6038,16 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"order" : 1,
+									"source" : [ "obj-92", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-94", 0 ],
+									"order" : 0,
 									"source" : [ "obj-92", 0 ]
 								}
 
@@ -6084,15 +6108,10 @@
 								}
 
 							}
- ],
-						"originid" : "pat-18"
+ ]
 					}
 ,
 					"patching_rect" : [ 568.428566813468933, 566.071423172950745, 52.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"globalpatchername" : ""
-					}
-,
 					"text" : "p looper"
 				}
 
@@ -6109,7 +6128,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 2,
+							"revision" : 9,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -6139,90 +6158,6 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 840.0, 395.152600169181824, 72.0, 72.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-30",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 267.0, 273.0, 82.0, 22.0 ],
-									"text" : "set loopBuffer"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-28",
-									"maxclass" : "button",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 267.0, 237.0, 24.0, 24.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-26",
-									"maxclass" : "newobj",
-									"numinlets" : 0,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 267.0, 200.0, 42.0, 22.0 ],
-									"text" : "r pOut"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-25",
-									"maxclass" : "message",
-									"numinlets" : 2,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 141.0, 273.0, 99.0, 22.0 ],
-									"text" : "set dummyBuffer"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-21",
-									"maxclass" : "newobj",
-									"numinlets" : 1,
-									"numoutlets" : 2,
-									"outlettype" : [ "float", "bang" ],
-									"patching_rect" : [ 182.0, 156.0, 120.0, 22.0 ],
-									"text" : "buffer~ dummyBuffer"
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-8",
-									"maxclass" : "button",
-									"numinlets" : 1,
-									"numoutlets" : 1,
-									"outlettype" : [ "bang" ],
-									"parameter_enable" : 0,
-									"patching_rect" : [ 141.0, 234.0, 24.0, 24.0 ]
-								}
-
-							}
-, 							{
-								"box" : 								{
-									"id" : "obj-1",
-									"maxclass" : "newobj",
-									"numinlets" : 0,
-									"numoutlets" : 1,
-									"outlettype" : [ "" ],
-									"patching_rect" : [ 141.0, 200.0, 33.0, 22.0 ],
-									"text" : "r pIn"
 								}
 
 							}
@@ -6301,7 +6236,6 @@
 											"parameter_invisible" : 1,
 											"parameter_longname" : "number",
 											"parameter_modmode" : 0,
-											"parameter_osc_name" : "<default>",
 											"parameter_shortname" : "number",
 											"parameter_type" : 3
 										}
@@ -6327,7 +6261,6 @@
 											"parameter_longname" : "button",
 											"parameter_mmax" : 1,
 											"parameter_modmode" : 0,
-											"parameter_osc_name" : "<default>",
 											"parameter_shortname" : "button",
 											"parameter_type" : 2
 										}
@@ -6387,7 +6320,6 @@
 											"parameter_invisible" : 1,
 											"parameter_longname" : "number[20]",
 											"parameter_modmode" : 0,
-											"parameter_osc_name" : "<default>",
 											"parameter_shortname" : "number[20]",
 											"parameter_type" : 3
 										}
@@ -6558,7 +6490,6 @@
 											"parameter_invisible" : 1,
 											"parameter_longname" : "number[18]",
 											"parameter_modmode" : 0,
-											"parameter_osc_name" : "<default>",
 											"parameter_shortname" : "number[18]",
 											"parameter_type" : 3
 										}
@@ -6596,7 +6527,6 @@
 											"parameter_longname" : "button[12]",
 											"parameter_mmax" : 1,
 											"parameter_modmode" : 0,
-											"parameter_osc_name" : "<default>",
 											"parameter_shortname" : "button[12]",
 											"parameter_type" : 2
 										}
@@ -6622,7 +6552,6 @@
 											"parameter_longname" : "button[11]",
 											"parameter_mmax" : 1,
 											"parameter_modmode" : 0,
-											"parameter_osc_name" : "<default>",
 											"parameter_shortname" : "button[11]",
 											"parameter_type" : 2
 										}
@@ -6648,7 +6577,6 @@
 											"parameter_longname" : "button[10]",
 											"parameter_mmax" : 1,
 											"parameter_modmode" : 0,
-											"parameter_osc_name" : "<default>",
 											"parameter_shortname" : "button[10]",
 											"parameter_type" : 2
 										}
@@ -6696,7 +6624,6 @@
 											"parameter_invisible" : 1,
 											"parameter_longname" : "number[17]",
 											"parameter_modmode" : 0,
-											"parameter_osc_name" : "<default>",
 											"parameter_shortname" : "number[17]",
 											"parameter_type" : 3
 										}
@@ -6733,7 +6660,6 @@
 											"parameter_invisible" : 1,
 											"parameter_longname" : "number[16]",
 											"parameter_modmode" : 0,
-											"parameter_osc_name" : "<default>",
 											"parameter_shortname" : "number[16]",
 											"parameter_type" : 3
 										}
@@ -6770,7 +6696,6 @@
 											"parameter_invisible" : 1,
 											"parameter_longname" : "number[15]",
 											"parameter_modmode" : 0,
-											"parameter_osc_name" : "<default>",
 											"parameter_shortname" : "number[15]",
 											"parameter_type" : 3
 										}
@@ -6835,7 +6760,6 @@
 											"parameter_invisible" : 1,
 											"parameter_longname" : "number[14]",
 											"parameter_modmode" : 0,
-											"parameter_osc_name" : "<default>",
 											"parameter_shortname" : "number[14]",
 											"parameter_type" : 3
 										}
@@ -6905,7 +6829,6 @@
 											"parameter_invisible" : 1,
 											"parameter_longname" : "number[13]",
 											"parameter_modmode" : 0,
-											"parameter_osc_name" : "<default>",
 											"parameter_shortname" : "number[13]",
 											"parameter_type" : 3
 										}
@@ -6947,7 +6870,6 @@
 											"parameter_invisible" : 1,
 											"parameter_longname" : "number[12]",
 											"parameter_modmode" : 0,
-											"parameter_osc_name" : "<default>",
 											"parameter_shortname" : "number[12]",
 											"parameter_type" : 3
 										}
@@ -6974,7 +6896,6 @@
 											"parameter_invisible" : 1,
 											"parameter_longname" : "number[11]",
 											"parameter_modmode" : 0,
-											"parameter_osc_name" : "<default>",
 											"parameter_shortname" : "number[11]",
 											"parameter_type" : 3
 										}
@@ -7011,7 +6932,6 @@
 											"parameter_invisible" : 1,
 											"parameter_longname" : "number[10]",
 											"parameter_modmode" : 0,
-											"parameter_osc_name" : "<default>",
 											"parameter_shortname" : "number[10]",
 											"parameter_type" : 3
 										}
@@ -7097,7 +7017,6 @@
 											"parameter_invisible" : 1,
 											"parameter_longname" : "number[3]",
 											"parameter_modmode" : 0,
-											"parameter_osc_name" : "<default>",
 											"parameter_shortname" : "number[3]",
 											"parameter_type" : 3
 										}
@@ -7135,7 +7054,6 @@
 											"parameter_longname" : "button[8]",
 											"parameter_mmax" : 1,
 											"parameter_modmode" : 0,
-											"parameter_osc_name" : "<default>",
 											"parameter_shortname" : "button[8]",
 											"parameter_type" : 2
 										}
@@ -7209,7 +7127,6 @@
 											"parameter_longname" : "button[5]",
 											"parameter_mmax" : 1,
 											"parameter_modmode" : 0,
-											"parameter_osc_name" : "<default>",
 											"parameter_shortname" : "button[5]",
 											"parameter_type" : 2
 										}
@@ -7247,7 +7164,6 @@
 											"parameter_longname" : "button[4]",
 											"parameter_mmax" : 1,
 											"parameter_modmode" : 0,
-											"parameter_osc_name" : "<default>",
 											"parameter_shortname" : "button[4]",
 											"parameter_type" : 2
 										}
@@ -7285,13 +7201,6 @@
 							}
  ],
 						"lines" : [ 							{
-								"patchline" : 								{
-									"destination" : [ "obj-8", 0 ],
-									"source" : [ "obj-1", 0 ]
-								}
-
-							}
-, 							{
 								"patchline" : 								{
 									"destination" : [ "obj-23", 0 ],
 									"source" : [ "obj-10", 0 ]
@@ -7649,20 +7558,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-28", 0 ],
-									"source" : [ "obj-26", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
-									"destination" : [ "obj-30", 0 ],
-									"source" : [ "obj-28", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-164", 4 ],
 									"source" : [ "obj-38", 0 ]
 								}
@@ -7758,13 +7653,6 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-25", 0 ],
-									"source" : [ "obj-8", 0 ]
-								}
-
-							}
-, 							{
-								"patchline" : 								{
 									"destination" : [ "obj-114", 0 ],
 									"order" : 0,
 									"source" : [ "obj-81", 0 ]
@@ -7795,15 +7683,10 @@
 								}
 
 							}
- ],
-						"originid" : "pat-20"
+ ]
 					}
 ,
 					"patching_rect" : [ 1124.137912273406982, 429.885050296783447, 72.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"globalpatchername" : ""
-					}
-,
 					"text" : "p resampler"
 				}
 
@@ -8043,6 +7926,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-23", 0 ],
+					"source" : [ "obj-137", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-139", 0 ],
 					"source" : [ "obj-138", 0 ]
 				}
@@ -8140,6 +8030,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-213", 0 ],
 					"source" : [ "obj-222", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-118", 0 ],
+					"source" : [ "obj-23", 0 ]
 				}
 
 			}
@@ -8713,13 +8610,13 @@
 
 			}
  ],
-		"originid" : "pat-4",
 		"parameters" : 		{
 			"obj-1" : [ "button[2]", "button[2]", 0 ],
 			"obj-10" : [ "button[13]", "button[13]", 0 ],
 			"obj-112" : [ "button[24]", "button[24]", 0 ],
 			"obj-114" : [ "live.gain~[3]", "live.gain~[3]", 0 ],
 			"obj-117" : [ "dial", "dial", 0 ],
+			"obj-118" : [ "live.gain~[4]", "live.gain~[4]", 0 ],
 			"obj-12" : [ "button[1]", "button[1]", 0 ],
 			"obj-128" : [ "number[4]", "number[4]", 0 ],
 			"obj-13" : [ "toggle", "toggle", 0 ],
@@ -8754,6 +8651,7 @@
 			"obj-35" : [ "number[1]", "number[1]", 0 ],
 			"obj-388" : [ "number[6]", "number[6]", 0 ],
 			"obj-39" : [ "button[3]", "button[3]", 0 ],
+			"obj-3::obj-4" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-414" : [ "button[16]", "button[16]", 0 ],
 			"obj-416" : [ "button[9]", "button[9]", 0 ],
 			"obj-418" : [ "button[17]", "button[17]", 0 ],
@@ -8771,15 +8669,6 @@
 			"obj-67" : [ "toggle[2]", "toggle[2]", 0 ],
 			"obj-82" : [ "button[26]", "button[26]", 0 ],
 			"obj-9" : [ "button[21]", "button[21]", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
 			"inherited_shortname" : 1
 		}
 ,
