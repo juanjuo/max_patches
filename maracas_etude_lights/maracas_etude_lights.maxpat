@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 9,
 			"minor" : 0,
-			"revision" : 8,
+			"revision" : 9,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 712.0, 135.0, 1000.0, 780.0 ],
+		"rect" : [ 81.0, 114.0, 1000.0, 694.0 ],
 		"gridsize" : [ 15.0, 15.0 ],
 		"boxes" : [ 			{
 				"box" : 				{
@@ -19,7 +19,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1184.0, 191.0, 150.0, 48.0 ],
+					"patching_rect" : [ 1184.0, 191.0, 150.0, 47.0 ],
 					"text" : "Metronome is slowing down with track because of jitter, fix?"
 				}
 
@@ -58,7 +58,7 @@
 						"appversion" : 						{
 							"major" : 9,
 							"minor" : 0,
-							"revision" : 8,
+							"revision" : 9,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -66,6 +66,7 @@
 						"classnamespace" : "box",
 						"rect" : [ 59.0, 106.0, 1000.0, 659.0 ],
 						"gridsize" : [ 15.0, 15.0 ],
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-131",
@@ -1242,7 +1243,7 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 209.574466586112976, 628.723399758338928, 80.0, 37.0 ]
+									"patching_rect" : [ 209.574466586112976, 628.723399758338928, 80.0, 36.0 ]
 								}
 
 							}
@@ -1272,7 +1273,7 @@
 										"appversion" : 										{
 											"major" : 9,
 											"minor" : 0,
-											"revision" : 8,
+											"revision" : 9,
 											"architecture" : "x64",
 											"modernui" : 1
 										}
@@ -2462,7 +2463,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 194.5, 690.0, 47.0, 22.0 ],
+					"patching_rect" : [ 312.0, 413.0, 47.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 385.470089375972748, 716.239323496818542, 100.0, 22.0 ],
 					"text" : "p lights"
@@ -2566,7 +2567,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 674.0, 334.0, 175.0, 241.0 ],
+					"patching_rect" : [ 674.0, 334.0, 175.0, 234.0 ],
 					"text" : "COMMENTS\n\neach section is 80s\n\n1: drone\n2: noise and drone\n3: drone\n4: drone + bass drone + noise\n5: bass + drone\n\n\n\n\n\n\n\n"
 				}
 
@@ -3032,15 +3033,6 @@
 		"parameters" : 		{
 			"obj-39" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-40" : [ "live.gain~[1]", "live.gain~[1]", 0 ],
-			"parameterbanks" : 			{
-				"0" : 				{
-					"index" : 0,
-					"name" : "",
-					"parameters" : [ "-", "-", "-", "-", "-", "-", "-", "-" ]
-				}
-
-			}
-,
 			"inherited_shortname" : 1
 		}
 ,
