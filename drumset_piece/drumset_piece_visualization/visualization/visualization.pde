@@ -13,7 +13,7 @@ int numPerRow = 10;
 int numRows;
 
 void setup() {
-  size(1280, 720);
+  fullScreen(2);
   background(0);
   fill(255, 255, 255);
   stroke(255, 255, 255);
@@ -34,7 +34,7 @@ void setup() {
    * and the port of the remote location address are the same, hence you will
    * send messages back to this sketch.
    */
-  myRemoteLocation = new NetAddress("10.10.54.249", 12000);
+  myRemoteLocation = new NetAddress("172.20.1.225", 12000);
 
 
 
