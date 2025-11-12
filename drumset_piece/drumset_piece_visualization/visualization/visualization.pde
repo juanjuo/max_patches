@@ -11,6 +11,7 @@ ArrayList<Number> numArray;
 int padding = 50;
 int numPerRow = 10;
 int numRows;
+int correctIndex = 0;
 
 void setup() {
   fullScreen(2);
@@ -72,22 +73,34 @@ void oscEvent(OscMessage m) {
     }
   }
 
-  if (m.checkAddrPattern("int")) {
-    int n = m.get(0).intValue();
-    if (n != 0) {
-      numArray.get(n - 1).turnOff();
+  if (m.checkAddrPattern("correct")) {
+    //int n = m.get(0).intValue();
+    //if (n != 0) {
+    //  numArray.get(n - 1).turnOff();
+    //}
+    if (correctIndex != -1) {
+      numArray.get(correctIndex).turnOff();
+      correctIndex++;
     }
   }
 
+  if (m.checkAddrPattern("int")) {
+    int number = m.get(0).intValue();
+    findNumber(number);
+  }
+
   if (m.checkAddrPattern("reset")) {
+    if (correctIndex != -1) correctIndex = 0;
     reset();
   }
 
   if (m.checkAddrPattern("failed")) {
+    if (correctIndex != -1) correctIndex = 0;
     reset();
   }
 
   if (m.checkAddrPattern("completed")) {
+    correctIndex = -1; //so that player cannot change nubers while shuffle
     for (Number n : numArray) {
       n.active = true;
       n.shuffle = true;
@@ -98,6 +111,7 @@ void oscEvent(OscMessage m) {
     for (Number n : numArray) {
       n.shuffle = false;
     }
+    correctIndex = 0;
   }
 
   //for ( Object o : m.arguments()) {
@@ -123,4 +137,17 @@ void reset() {
 
 void failed() {
   reset();
+}
+
+void findNumber(int number) {
+  int index = 0;
+  boolean state = true;
+  while (state) {
+    Number value = numArray.get(index);
+    if (value.val == number && value.active != false) {
+      value.turnOff();
+      state = false;
+    }
+    index++;
+  }
 }
